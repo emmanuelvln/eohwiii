@@ -24,12 +24,13 @@
 }
 
 :root {
-    --light-color: rgb(57, 57, 94);
-    --dark-color: #262626ff;
+    --light: rgb(57, 57, 94);
+    --dark: #262626ff;
+    --gray: #262626ff;
 }
 
 html {
-    background-color: var(--light-color);
+    background-color: var(--light);
 }
 
 body {
@@ -46,7 +47,7 @@ body {
 
 #show-container {
     margin-top: 75px;
-    background-color: var(--dark-color);
+    background-color: var(--gray);
     width: 300px;
     height: 50px;
     border-radius: 15px;
@@ -55,9 +56,19 @@ body {
     justify-content: center;
     color: white;
     font-family: Bahnschrift;
+    font-size: 20px;
 }
 
-#input-container {
+#subtext {
+    margin-top: 15px;
+    width: 300px;
+    height: 20px;
+    font-size: 15px;
+    font-family: Bahnschrift;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #input-field {
@@ -67,4 +78,26 @@ body {
     height: 50px;
     border-radius: 15px;
     text-align: center;
+    font-family: Bahnschrift;
+}
+
+#next-container {
+    margin-top: 15px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#next-button {
+    font-family: Bahnschrift;
+    font-size: 15px;
+    color: white;
+    width: 60px;
+    height: 30px;
+    background-color: var(--dark);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

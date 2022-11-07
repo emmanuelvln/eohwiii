@@ -11,38 +11,76 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript">
+        vocab = null;
+        answer = "";
 
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+        
         $(document).ready(function(){
 			appendContent();
+
+            input = document.querySelector("#input-field");
+            input.addEventListener("keyup", (event) => {
+                if (event.key === "Enter") {
+                    getInput();
+                }
+            });
 		});
         
         var appendContent=function(){
-            fetch('https://emmanuelvln.github.io/eohwiii/vocab.json')
+            fetch('https://raw.githubusercontent.com/emmanuelvln/eohwiii/main/vocab.json')
                 .then(function (response) {
                     return response.json();
                 })
                 .then(function (data) {
-                            setupData(data);
+                            vocab = data;
+                            setupData();
                 })
                 .catch(function (err) {
                     console.log('error: ' + err);
                 });
         };
         
-        function setupData(data) {
-            console.log(data);
-            document.getElementById("show-container").innerHTML = "<div id='character'>chara</div></div>";
+        function setupData() {
+            i = getRandomInt(vocab.length);
+            translation = vocab[i].translation.split(';')[0];
+            hangeul = vocab[i].hangeul;
+            if (getRandomInt(2) == 0) {
+                element = hangeul;
+                console.log(translation);                    
+                answer = translation;    
+                goal = "meaning";
+            }
+            else {
+                element = translation;
+                console.log(hangeul);                    
+                answer = hangeul;    
+                goal = "translation";
+            }
+            document.getElementById("subtext").innerHTML = "Find the " + goal + ".";
+            document.getElementById("show-container").innerHTML = "<div id='character'>" + element + "</div></div>";
         }
-
+       
+        function getInput() {
+            resp = document.querySelector("#input-field").value;
+            if (resp.toLowerCase() == answer.toLowerCase() || answer.toLowerCase().includes(resp.toLowerCase())) {
+                setupData();
+            }
+        }
+    
     </script>
 </head>
 <body>
     <div>
-        <div id="show-container">
-            character
-        </div>
+        <div id="show-container">Display loading...</div>
+        <div id="subtext">Subtext loading...</div>
         <div id="input-container">
-            <input id="input-field" type="text" placeholder="Type your answer here">
+            <input class="input-field" id="input-field" type="text" placeholder="Type your answer here">
+        </div>
+        <div id="next-container">
+            <div id="next-button" onclick="setupData()">Skip</div>
         </div>
     </div>
 </body>
