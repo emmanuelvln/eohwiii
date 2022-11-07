@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Evogria;
+    src: url('fonts/Evogria.otf');
+}
+@font-face {
+    font-family: Sofia;
+    src: url('fonts/Sofia.otf');
+}
+@font-face {
+    font-family: Blanch;
+    src: url('fonts/Blanch.otf');
+}
+@font-face {
+    font-family: KaushanScript;
+    src: url('fonts/KaushanScript.otf');
+}
+@font-face {
+    font-family: ConfigCondensed;
+    src: url('fonts/ConfigCondensed.otf');
+}
+@font-face {
+    font-family: Bahnschrift;
+    src: url('fonts/Bahnschrift.TTF');
+}
+
+:root {
+    --light-color: rgb(57, 57, 94);
+    --dark-color: #262626ff;
+}
+
+html {
+    background-color: var(--light-color);
+}
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select:-moz-none;
+    -ms-user-select:none;
+    user-select:none}
+
+body {
+    margin: 0;
+}
+
+#tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
