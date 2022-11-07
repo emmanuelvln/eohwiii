@@ -1,0 +1,1263 @@
+[
+ {
+  "hangeul": "교육",
+  "translation": "education, training, schooling"
+ },
+ {
+  "hangeul": "대학원",
+  "translation": "graduate school"
+ },
+ {
+  "hangeul": "대학원생",
+  "translation": "graduate student"
+ },
+ {
+  "hangeul": "대학교",
+  "translation": "university, college"
+ },
+ {
+  "hangeul": "고등학교",
+  "translation": "high school"
+ },
+ {
+  "hangeul": "대학생",
+  "translation": "university student"
+ },
+ {
+  "hangeul": "대학",
+  "translation": "university, college; faculty"
+ },
+ {
+  "hangeul": "연구소",
+  "translation": "research institute"
+ },
+ {
+  "hangeul": "고등학생",
+  "translation": "high school student"
+ },
+ {
+  "hangeul": "중학생",
+  "translation": "middle school student"
+ },
+ {
+  "hangeul": "중학교",
+  "translation": "middle school"
+ },
+ {
+  "hangeul": "초등학교",
+  "translation": "elementary school"
+ },
+ {
+  "hangeul": "초등학생",
+  "translation": "elementary school student"
+ },
+ {
+  "hangeul": "유치원",
+  "translation": "kindergarten"
+ },
+ {
+  "hangeul": "유치원생",
+  "translation": "kindergartener"
+ },
+ {
+  "hangeul": "학원",
+  "translation": "private institute, school, academy"
+ },
+ 
+ {
+  "hangeul": "교무실",
+  "translation": "faculty office, teacher's office"
+ },
+ {
+  "hangeul": "선생님",
+  "translation": "teacher"
+ },
+ {
+  "hangeul": "교수",
+  "translation": "professor; teaching, instruction"
+ },
+ {
+  "hangeul": "교사",
+  "translation": "(higher education) instructor, teacher, school teacher; (formal) instigation, incitement, incite"
+ },
+ {
+  "hangeul": "박사",
+  "translation": "doctor (phd); expert; doctorate degree"
+ },
+ {
+  "hangeul": "학위",
+  "translation": "academic degree"
+ },
+ {
+  "hangeul": "반장",
+  "translation": "class president, leader"
+ },
+ {
+  "hangeul": "학생",
+  "translation": "student"
+ },
+ {
+  "hangeul": "동창",
+  "translation": "fellow students, classmates"
+ },
+ {
+  "hangeul": "남학생",
+  "translation": "male student"
+ },
+ {
+  "hangeul": "여학생",
+  "translation": "female student"
+ },
+ {
+  "hangeul": "전학생",
+  "translation": "transfer student"
+ },
+ {
+  "hangeul": "복학생",
+  "translation": "student who has returned to school after a long break"
+ },
+ {
+  "hangeul": "교환학생",
+  "translation": "exchange student"
+ },
+ {
+  "hangeul": "학자",
+  "translation": "scholar"
+ },
+ {
+  "hangeul": "장학금",
+  "translation": "scholarship"
+ },
+ 
+ {
+  "hangeul": "학교",
+  "translation": "school"
+ },
+ {
+  "hangeul": "교장",
+  "translation": "principal, headmaster (at a school)"
+ },
+ {
+  "hangeul": "학년",
+  "translation": "school year, grade (level)"
+ },
+ {
+  "hangeul": "학기",
+  "translation": "semester"
+ },
+ {
+  "hangeul": "기말\/학기말",
+  "translation": "end of a term, end of a semester"
+ },
+ {
+  "hangeul": "방학",
+  "translation": "vacation (from school)"
+ },
+ {
+  "hangeul": "강의",
+  "translation": "lecture, class (college)"
+ },
+ {
+  "hangeul": "강의실",
+  "translation": "lecture room, classroom (college)"
+ },
+ {
+  "hangeul": "강연회",
+  "translation": "lecture meeting (less common)"
+ },
+ {
+  "hangeul": "교실",
+  "translation": "classroom (not college)"
+ },
+ {
+  "hangeul": "수업",
+  "translation": "class, lesson, course (up to highschool)"
+ },
+ {
+  "hangeul": "반",
+  "translation": "half; group, class"
+ },
+ {
+  "hangeul": "클래스",
+  "translation": "class (not school\/e.g. class based on skill or quality)"
+ },
+ {
+  "hangeul": "레슨",
+  "translation": "lesson, private lesson (not school subjects; instruments etc)"
+ },
+ {
+  "hangeul": "과외",
+  "translation": "private lessons, tutoring; extra work"
+ },
+ 
+ {
+  "hangeul": "유학",
+  "translation": "studying abroad"
+ },
+ {
+  "hangeul": "전학",
+  "translation": "act of transferring schools"
+ },
+ {
+  "hangeul": "동창회",
+  "translation": "alumni meeting, class reunion"
+ },
+ 
+ {
+  "hangeul": "과목",
+  "translation": "subject, course"
+ },
+ {
+  "hangeul": "경영학",
+  "translation": "business administration (field of study)"
+ },
+ {
+  "hangeul": "수학",
+  "translation": "mathematics; study"
+ },
+ {
+  "hangeul": "과학",
+  "translation": "science"
+ },
+ {
+  "hangeul": "역사",
+  "translation": "history"
+ },
+ {
+  "hangeul": "문학",
+  "translation": "literature"
+ },
+ {
+  "hangeul": "심리학",
+  "translation": "psychology"
+ },
+ {
+  "hangeul": "체육",
+  "translation": "physical education, physical training, physical activity"
+ },
+ {
+  "hangeul": "체육관",
+  "translation": "gym (for sports)"
+ },
+ {
+  "hangeul": "시",
+  "translation": "poem; time, hour; o'clock; city"
+ },
+ {
+  "hangeul": "소설",
+  "translation": "novel; fiction"
+ },
+ {
+  "hangeul": "편지",
+  "translation": "letter, note"
+ },
+ {
+  "hangeul": "엽서",
+  "translation": "postcard"
+ },
+ 
+ {
+  "hangeul": "캠퍼스",
+  "translation": "campus"
+ },
+ {
+  "hangeul": "도서관",
+  "translation": "library"
+ },
+ {
+  "hangeul": "독서실",
+  "translation": "reading room, study room"
+ },
+ {
+  "hangeul": "공부",
+  "translation": "studying"
+ },
+ {
+  "hangeul": "교과서",
+  "translation": "textbook"
+ },
+ {
+  "hangeul": "책",
+  "translation": "book"
+ },
+ {
+  "hangeul": "신간",
+  "translation": "new book"
+ },
+ {
+  "hangeul": "책장",
+  "translation": "(bigger) bookshelf, bookcase; the page of a book"
+ },
+ {
+  "hangeul": "책꽂이",
+  "translation": "bookshelf"
+ },
+ {
+  "hangeul": "학습",
+  "translation": "learning, studies"
+ },
+ {
+  "hangeul": "독학",
+  "translation": "self-study, self education"
+ },
+ {
+  "hangeul": "연구",
+  "translation": "research (into\/on), study (of\/into\/on)"
+ },
+ 
+ {
+  "hangeul": "시험",
+  "translation": "exam, test"
+ },
+ {
+  "hangeul": "시험지",
+  "translation": "test paper"
+ },
+ {
+  "hangeul": "정답",
+  "translation": "correct answer"
+ },
+ {
+  "hangeul": "오답",
+  "translation": "wrong answer, incorrect answer"
+ },
+ {
+  "hangeul": "숙제",
+  "translation": "homework, assignment"
+ },
+ {
+  "hangeul": "과제",
+  "translation": "task, assignment, project, homework; problem"
+ },
+ {
+  "hangeul": "종이",
+  "translation": "paper"
+ },
+ {
+  "hangeul": "서류",
+  "translation": "documents, papers (plural)"
+ },
+ {
+  "hangeul": "문서",
+  "translation": "document, papers (singular)"
+ },
+ 
+ {
+  "hangeul": "보고서",
+  "translation": "report, paper"
+ },
+ {
+  "hangeul": "논문",
+  "translation": "thesis, research paper"
+ },
+ {
+  "hangeul": "수필",
+  "translation": "essay (that a writer would write)"
+ },
+ {
+  "hangeul": "글",
+  "translation": "writing, (a piece of) writing"
+ },
+ {
+  "hangeul": "글씨",
+  "translation": "handwriting"
+ },
+ {
+  "hangeul": "글자",
+  "translation": "letter, characters (of a language)"
+ },
+ {
+  "hangeul": "문자",
+  "translation": "letters, characters, alphabet, writing system; big words; text message"
+ },
+ {
+  "hangeul": "문장",
+  "translation": "sentence; a good writer; crest"
+ },
+ {
+  "hangeul": "예문",
+  "translation": "example in sentence(s)"
+ },
+ 
+ {
+  "hangeul": "문구",
+  "translation": "writing supplies; phrase, sentence, expression"
+ },
+ {
+  "hangeul": "공책",
+  "translation": "notebook"
+ },
+ {
+  "hangeul": "페이지",
+  "translation": "page"
+ },
+ {
+  "hangeul": "계산기",
+  "translation": "calculator"
+ },
+ {
+  "hangeul": "책상",
+  "translation": "desk"
+ },
+ {
+  "hangeul": "연필",
+  "translation": "pencil"
+ },
+ {
+  "hangeul": "펜",
+  "translation": "pen"
+ },
+ {
+  "hangeul": "만년필",
+  "translation": "fountain pen"
+ },
+ {
+  "hangeul": "필통",
+  "translation": "pencil case"
+ },
+ {
+  "hangeul": "지우개",
+  "translation": "eraser, rubber"
+ },
+ 
+ {
+  "hangeul": "사전",
+  "translation": "dictionary"
+ },
+ {
+  "hangeul": "칠판",
+  "translation": "blackboard, chalkboard"
+ },
+ {
+  "hangeul": "수첩",
+  "translation": "(pocket) notebook, personal organizer"
+ },
+ {
+  "hangeul": "일기",
+  "translation": "diary, journal; one's lifetime, one's whole life; weather"
+ },
+ 
+ 
+ {
+  "hangeul": "인간",
+  "translation": "human being, person, mankind"
+ },
+ {
+  "hangeul": "민족",
+  "translation": "people, ethnic group, race"
+ },
+ {
+  "hangeul": "국민",
+  "translation": "the public, people, citizen"
+ },
+ {
+  "hangeul": "시민",
+  "translation": "citizen; city dweller"
+ },
+ {
+  "hangeul": "인구",
+  "translation": "population"
+ },
+ {
+  "hangeul": "남녀",
+  "translation": "men and women"
+ },
+ {
+  "hangeul": "성별",
+  "translation": "sex, gender"
+ },
+ {
+  "hangeul": "노약자",
+  "translation": "elderly, weak people"
+ },
+ {
+  "hangeul": "노인",
+  "translation": "old people, senior citizen"
+ },
+ {
+  "hangeul": "젊은이",
+  "translation": "the youth, young person, young adult"
+ },
+ {
+  "hangeul": "개인",
+  "translation": "individual, each person"
+ },
+ {
+  "hangeul": "인물",
+  "translation": "person, individual, character, figure; look, appearance"
+ },
+ 
+ {
+  "hangeul": "죽음",
+  "translation": "death"
+ },
+ {
+  "hangeul": "살인",
+  "translation": "murder, killing"
+ },
+ {
+  "hangeul": "인생",
+  "translation": "life (entirety)(refers to the entirety of life\/has a more serious nuance so in some situations it would be awkward)"
+ },
+ {
+  "hangeul": "평생",
+  "translation": "lifetime, one's entire life until you die"
+ },
+ {
+  "hangeul": "삶",
+  "translation": "life, living, existence (half way between 인생 and 생활 and therefore is interchangeable with either)"
+ },
+ {
+  "hangeul": "생명",
+  "translation": "life (state of being alive and the force that allows you to live); life (period of time something was maintained); life (core of something)"
+ },
+ {
+  "hangeul": "생활",
+  "translation": "life (act of living in a place); living (making a living), livelihood; life (act of living while doing a certain job or act)(day to day life (married life\/daily life\/school life)"
+ },
+ {
+  "hangeul": "목숨",
+  "translation": "life (power that allows you to breath and other actions that keep you alive)"
+ },
+ {
+  "hangeul": "일상생활",
+  "translation": "everyday life"
+ },
+ {
+  "hangeul": "건강",
+  "translation": "health"
+ },
+ {
+  "hangeul": "나이",
+  "translation": "age"
+ },
+ {
+  "hangeul": "연세",
+  "translation": "age (hon.)"
+ },
+ {
+  "hangeul": "살",
+  "translation": "years of age (count); flesh, muscle, fat"
+ },
+ {
+  "hangeul": "동갑",
+  "translation": "the same age"
+ },
+ {
+  "hangeul": "살",
+  "translation": "flesh"
+ },
+ {
+  "hangeul": "피",
+  "translation": "blood"
+ },
+ {
+  "hangeul": "피부",
+  "translation": "skin"
+ },
+ {
+  "hangeul": "껍질",
+  "translation": "skin, bark, peel, nutshell, shell, frame"
+ },
+ {
+  "hangeul": "가죽",
+  "translation": "leather, skin, hide"
+ },
+ {
+  "hangeul": "몸",
+  "translation": "body, body (fundamental part of an object); status (a status or person of such status)"
+ },
+ {
+  "hangeul": "온몸",
+  "translation": "entire body"
+ },
+ {
+  "hangeul": "신체",
+  "translation": "body (formal)"
+ },
+ 
+ 
+ {
+  "hangeul": "모습",
+  "translation": "figure, shape, features, appearance, look (human); trace, track"
+ },
+ {
+  "hangeul": "외모",
+  "translation": "appearance (only for people)"
+ },
+ {
+  "hangeul": "모양",
+  "translation": "shape, form, state, condition, way; grooming (non-human)"
+ },
+ {
+  "hangeul": "형태",
+  "translation": "form, shape, type, kind(more abstract)"
+ },
+ {
+  "hangeul": "무늬",
+  "translation": "design, pattern, figure"
+ },
+ {
+  "hangeul": "디자인",
+  "translation": "design"
+ },
+ {
+  "hangeul": "구석",
+  "translation": "corner (inner area of a concave corner); remote place; side, part, point"
+ },
+ {
+  "hangeul": "코너",
+  "translation": "corner; department, section; feature"
+ },
+ 
+ {
+  "hangeul": "키",
+  "translation": "height (person)"
+ },
+ {
+  "hangeul": "폭",
+  "translation": "width, range, scope; piece; deeply, completely"
+ },
+ {
+  "hangeul": "크기",
+  "translation": "size, volume"
+ },
+ {
+  "hangeul": "길이",
+  "translation": "length, distance, duration; forever, permanently"
+ },
+ {
+  "hangeul": "높이",
+  "translation": "height, depth (object); high, highly"
+ },
+ {
+  "hangeul": "무게",
+  "translation": "weight; emphasis, authority"
+ },
+ {
+  "hangeul": "다이어트",
+  "translation": "diet, to go on a diet"
+ },
+ {
+  "hangeul": "톤",
+  "translation": "ton (count); tone"
+ },
+ {
+  "hangeul": "주위",
+  "translation": "around, the circumference, perimeter; surroundings"
+ },
+ {
+  "hangeul": "속도",
+  "translation": "speed, pace, velocity"
+ },
+ 
+ {
+  "hangeul": "근육",
+  "translation": "muscle"
+ },
+ {
+  "hangeul": "뼈",
+  "translation": "bone; hidden meanings, synopsis; sarcasm;  work one's fingers to the bone"
+ },
+ {
+  "hangeul": "고개",
+  "translation": "head, neck; hill, peak (climax)"
+ },
+ {
+  "hangeul": "머리",
+  "translation": "hair, head"
+ },
+ {
+  "hangeul": "머리카락",
+  "translation": "hair"
+ },
+ {
+  "hangeul": "금발",
+  "translation": "blonde hair"
+ },
+ {
+  "hangeul": "이마",
+  "translation": "forehead; top"
+ },
+ {
+  "hangeul": "얼굴",
+  "translation": "face"
+ },
+ {
+  "hangeul": "눈썹",
+  "translation": "eyebrow, eyelashes"
+ },
+ {
+  "hangeul": "눈",
+  "translation": "snow, eyeball, graduation, marking"
+ },
+ {
+  "hangeul": "눈빛",
+  "translation": "eyes, look, the look in one's eyes; snow white, white"
+ },
+ {
+  "hangeul": "시선",
+  "translation": "one's eyes, gaze, focused eyes"
+ },
+ {
+  "hangeul": "이목",
+  "translation": "attention, spotlight; eyes"
+ },
+ {
+  "hangeul": "귀",
+  "translation": "ear; corner; handle"
+ },
+ {
+  "hangeul": "입",
+  "translation": "mouth, lips; appetite, bite"
+ },
+ {
+  "hangeul": "턱",
+  "translation": "chin, jaw; elevated place; feast; treat, entertainment; in a composed manner; (bound) to a degree"
+ },
+ {
+  "hangeul": "볼",
+  "translation": "cheek; ball"
+ },
+ {
+  "hangeul": "입술",
+  "translation": "lips"
+ },
+ {
+  "hangeul": "혀",
+  "translation": "tongue"
+ },
+ {
+  "hangeul": "수염",
+  "translation": "beard, moustache, whiskers"
+ },
+ {
+  "hangeul": "턱수염",
+  "translation": "(chin) beard"
+ },
+ {
+  "hangeul": "코",
+  "translation": "nose; stitch (knitting)"
+ },
+ {
+  "hangeul": "목",
+  "translation": "neck; throat; voice"
+ },
+ {
+  "hangeul": "어깨",
+  "translation": "shoulder; thug, hoodlum"
+ },
+ {
+  "hangeul": "등",
+  "translation": "the back; lamp; grade, class"
+ },
+ {
+  "hangeul": "가슴",
+  "translation": "chest, breasts, heart; front"
+ },
+ {
+  "hangeul": "품",
+  "translation": "bosom, breast; width (of); work, labor; (bound noun) attitude"
+ },
+ {
+  "hangeul": "심장",
+  "translation": "the heart (in the body)"
+ },
+ {
+  "hangeul": "팔",
+  "translation": "arm"
+ },
+ {
+  "hangeul": "주먹",
+  "translation": "fist, punch; handful; violence; gang"
+ },
+ {
+  "hangeul": "손",
+  "translation": "hand"
+ },
+ {
+  "hangeul": "오른손",
+  "translation": "right hand"
+ },
+ {
+  "hangeul": "왼손",
+  "translation": "left hand"
+ },
+ {
+  "hangeul": "손바닥",
+  "translation": "palm of the hand"
+ },
+ {
+  "hangeul": "손등",
+  "translation": "back of the hand"
+ },
+ {
+  "hangeul": "맨손",
+  "translation": "bare hands; be empty handed, have nothing"
+ },
+ {
+  "hangeul": "손길",
+  "translation": "hand (extended, held, brushed, touched); helping hand; touch, skill"
+ },
+ {
+  "hangeul": "손가락",
+  "translation": "finger"
+ },
+ {
+  "hangeul": "지문",
+  "translation": "fingerprint; text; stage direction"
+ },
+ {
+  "hangeul": "손톱",
+  "translation": "fingernail"
+ },
+ {
+  "hangeul": "마디",
+  "translation": "knuckle, joint, body part; word, verse"
+ },
+ {
+  "hangeul": "손목",
+  "translation": "wrist"
+ },
+ {
+  "hangeul": "팔꿈치",
+  "translation": "elbow"
+ },
+ {
+  "hangeul": "배",
+  "translation": "stomach\/ship\/abdomen\/pear"
+ },
+ {
+  "hangeul": "허리",
+  "translation": "waist; middle"
+ },
+ {
+  "hangeul": "다리",
+  "translation": "leg; bridge"
+ },
+ {
+  "hangeul": "엉덩이",
+  "translation": "butt, buttocks"
+ },
+ {
+  "hangeul": "무릎",
+  "translation": "knee; lap"
+ },
+ {
+  "hangeul": "발목",
+  "translation": "ankle"
+ },
+ {
+  "hangeul": "발",
+  "translation": "foot, step; shot, round"
+ },
+ {
+  "hangeul": "발끝",
+  "translation": "tips of one's toes"
+ },
+ {
+  "hangeul": "굽",
+  "translation": "heel"
+ },
+ 
+ {
+  "hangeul": "표정",
+  "translation": "facial expression"
+ },
+ {
+  "hangeul": "미소",
+  "translation": "smile"
+ },
+ {
+  "hangeul": "웃음",
+  "translation": "laughter, laugh, giggle, smile"
+ },
+ 
+ {
+  "hangeul": "눈물",
+  "translation": "tear"
+ },
+ {
+  "hangeul": "울음",
+  "translation": "crying"
+ },
+ {
+  "hangeul": "콧물",
+  "translation": "snot, nasal mucus"
+ },
+ {
+  "hangeul": "악수",
+  "translation": "handshake, shake hands (with)"
+ },
+ {
+  "hangeul": "숨",
+  "translation": "breath, breathing"
+ },
+ {
+  "hangeul": "한숨",
+  "translation": "sigh"
+ },
+ {
+  "hangeul": "키수",
+  "translation": "kiss"
+ },
+ {
+  "hangeul": "기침",
+  "translation": "cough"
+ },
+ {
+  "hangeul": "감기",
+  "translation": "cold (sick)"
+ },
+ {
+  "hangeul": "눈병",
+  "translation": "eye disease"
+ },
+ {
+  "hangeul": "설사",
+  "translation": "diarrhea; even if\/though"
+ },
+ {
+  "hangeul": "증상",
+  "translation": "symptom"
+ },
+ {
+  "hangeul": "독감",
+  "translation": "flu"
+ },
+ {
+  "hangeul": "코피",
+  "translation": "nosebleed"
+ },
+ {
+  "hangeul": "열",
+  "translation": "fever, heat; row, line, queue; energy, hard work, effort; anger, rage"
+ },
+ {
+  "hangeul": "멀미",
+  "translation": "nausea, motion sickness"
+ },
+ {
+  "hangeul": "두통",
+  "translation": "headache"
+ },
+ {
+  "hangeul": "땀",
+  "translation": "sweat, perspiration; stitch (clothes)"
+ },
+ {
+  "hangeul": "냄새",
+  "translation": "odor, smell; mood (atmosphere)"
+ },
+ {
+  "hangeul": "암내",
+  "translation": "armpit smell"
+ },
+ {
+  "hangeul": "향기",
+  "translation": "scent, fragrance"
+ },
+ {
+  "hangeul": "기호",
+  "translation": "taste, preference (for) (formal instances\/less common, think consumer preference); sign, symbol"
+ },
+ {
+  "hangeul": "입맛",
+  "translation": "one's appetite, taste"
+ },
+ {
+  "hangeul": "맛",
+  "translation": "taste"
+ },
+ {
+  "hangeul": "침",
+  "translation": "saliva, spit; needle, acupuncture; stinger"
+ },
+ {
+  "hangeul": "소화",
+  "translation": "digestion; assimilation, absorb"
+ },
+ 
+ {
+  "hangeul": "정치",
+  "translation": "politics"
+ },
+ {
+  "hangeul": "외교",
+  "translation": "diplomacy"
+ },
+ {
+  "hangeul": "선거",
+  "translation": "election"
+ },
+ {
+  "hangeul": "정략",
+  "translation": "political scheme, move, political strategy"
+ },
+ {
+  "hangeul": "대통령",
+  "translation": "president"
+ },
+ {
+  "hangeul": "회장",
+  "translation": "president, chairman (of many types of groups); hall, venue"
+ },
+ {
+  "hangeul": "대표",
+  "translation": "representative, delegate; representative, delegate"
+ },
+ {
+  "hangeul": "의원",
+  "translation": "member of a legislative body; clinic; doctor"
+ },
+ {
+  "hangeul": "정부",
+  "translation": "government, administration; lover, mistress"
+ },
+ {
+  "hangeul": "관리",
+  "translation": "administration, management; government official"
+ },
+ {
+  "hangeul": "관리비",
+  "translation": "management expenses, administration costs, maintenance cost"
+ },
+ {
+  "hangeul": "경영",
+  "translation": "(business) management, adminstration"
+ },
+ {
+  "hangeul": "공무원",
+  "translation": "public servant, government employee, public officer"
+ },
+ {
+  "hangeul": "장관",
+  "translation": "minister (government affairs); magnificent sight, grandeur"
+ },
+ {
+  "hangeul": "대사관",
+  "translation": "embassy"
+ },
+ {
+  "hangeul": "지구",
+  "translation": "Earth, globe; district, zone, area"
+ },
+ {
+  "hangeul": "세계적",
+  "translation": "being global, worldwide, world-class; (determiner) global, worldwide"
+ },
+ {
+  "hangeul": "세계",
+  "translation": "whole world, universe; circle, community (geographical?)"
+ },
+ {
+  "hangeul": "세상",
+  "translation": "the world, society; life (abstract?)"
+ },
+ {
+  "hangeul": "사회",
+  "translation": "society, community, the world"
+ },
+ {
+  "hangeul": "계급",
+  "translation": "(social) class; rank (stronger association with job\/wealth)"
+ },
+ {
+  "hangeul": "신분",
+  "translation": "social position, status; identity"
+ },
+ {
+  "hangeul": "법",
+  "translation": "law, legislation; (bound noun) way, rule, right behavior"
+ },
+ {
+  "hangeul": "법칙",
+  "translation": "law (of...), rule, principle (universal norms you are expected to follow)"
+ },
+ {
+  "hangeul": "규칙",
+  "translation": "rule, regulation"
+ },
+ {
+  "hangeul": "불법",
+  "translation": "illegality, unlawfulness, illegal action"
+ },
+ {
+  "hangeul": "벌",
+  "translation": "punishment, penalty; bee, wasp, hornet; set (of), pair (of); (counter) number of clothes, dishes"
+ },
+ {
+  "hangeul": "벌금",
+  "translation": "fine, penalty"
+ },
+ {
+  "hangeul": "죄",
+  "translation": "crime, sin, blame, guilt"
+ },
+ {
+  "hangeul": "고소",
+  "translation": "accusation, (legal) charge; bitter smile"
+ },
+ {
+  "hangeul": "응급",
+  "translation": "emergency"
+ },
+ {
+  "hangeul": "질서",
+  "translation": "order, system (enforced by rules)"
+ },
+ {
+  "hangeul": "평화",
+  "translation": "peace"
+ },
+ {
+  "hangeul": "자유",
+  "translation": "freedom, liberty"
+ },
+ {
+  "hangeul": "독립",
+  "translation": "independence"
+ },
+ {
+  "hangeul": "문화",
+  "translation": "culture"
+ },
+ {
+  "hangeul": "이민",
+  "translation": "emigration; immigration"
+ },
+ {
+  "hangeul": "전통",
+  "translation": "tradition, custom, heritage"
+ },
+ {
+  "hangeul": "풍습",
+  "translation": "custom, manners"
+ },
+ {
+  "hangeul": "예절",
+  "translation": "manners, etiquette (in regards to a specific situation, where you follow procedure)"
+ },
+ {
+  "hangeul": "예의",
+  "translation": "(good) manners, courtesy (general good\/polite etiquette)"
+ },
+ {
+  "hangeul": "한복",
+  "translation": "Korean dress (traditional)"
+ },
+ {
+  "hangeul": "대중",
+  "translation": "the (general) public; being public, being popular; crowd, mass, party"
+ },
+ {
+  "hangeul": "공중",
+  "translation": "public (attached); the air (standlone noun), midair"
+ },
+ {
+  "hangeul": "인기",
+  "translation": "popularity; public interest"
+ },
+ {
+  "hangeul": "여권",
+  "translation": "passport; women's rights"
+ },
+ {
+  "hangeul": "금연",
+  "translation": "smoking prohibited, no smoking"
+ },
+ 
+ 
+ {
+  "hangeul": "이름",
+  "translation": "name"
+ },
+ {
+  "hangeul": "성명",
+  "translation": "full name; statement, announcement"
+ },
+ {
+  "hangeul": "제목",
+  "translation": "title, name (book etc)"
+ },
+ {
+  "hangeul": "호칭",
+  "translation": "title, name, address"
+ },
+ {
+  "hangeul": "성",
+  "translation": "family name; castle; gender, sex; anger"
+ },
+ {
+  "hangeul": "세대",
+  "translation": "generation; household, family"
+ },
+ {
+  "hangeul": "성함",
+  "translation": "(your) name (hon.)"
+ },
+ {
+  "hangeul": "서명",
+  "translation": "signature, autograph; book title"
+ },
+ {
+  "hangeul": "가족",
+  "translation": "family (people you're related to)"
+ },
+ {
+  "hangeul": "친척",
+  "translation": "relatives, extended family"
+ },
+ {
+  "hangeul": "식구",
+  "translation": "family, member of family, live in the same house\/eat together"
+ },
+ {
+  "hangeul": "부모님",
+  "translation": "parents"
+ },
+ {
+  "hangeul": "자식",
+  "translation": "one's children, offspring, descendent"
+ },
+ {
+  "hangeul": "자녀",
+  "translation": "(someone else's) children, sons and daughters, descendant"
+ },
+ {
+  "hangeul": "보호자",
+  "translation": "guardian, protector (responsible for taking care of children or elderly)"
+ },
+ {
+  "hangeul": "사이",
+  "translation": "relationship; distance apart"
+ },
+ {
+  "hangeul": "관계",
+  "translation": "relationship, connection, being related; sex"
+ },
+ {
+  "hangeul": "우정",
+  "translation": "friendship"
+ },
+ {
+  "hangeul": "둘이",
+  "translation": "two people, a couple, a pair"
+ },
+ {
+  "hangeul": "부부",
+  "translation": "a married couple"
+ },
+ {
+  "hangeul": "신혼부부",
+  "translation": "newly wed couple"
+ },
+ {
+  "hangeul": "주부",
+  "translation": "housewife, homemaker"
+ },
+ {
+  "hangeul": "이혼",
+  "translation": "divorce"
+ }
+]

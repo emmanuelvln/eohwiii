@@ -12,7 +12,26 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript">
 
-        function setupData() {
+        $(document).ready(function(){
+			appendContent();
+		});
+        
+        var appendContent=function(){
+            fetch('https://emmanuelvln.github.io/eohwiii/vocab.json')
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                            setupData(data);
+                })
+                .catch(function (err) {
+                    console.log('error: ' + err);
+                });
+        };
+        
+        function setupData(data) {
+            console.log(data);
+            document.getElementById("show-container").innerHTML = "<div id='character'>chara</div></div>";
         }
 
     </script>
