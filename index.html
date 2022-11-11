@@ -13,11 +13,14 @@
     <script type="text/javascript">
         vocab = null;
         answer = "";
+        selectedList = 0;
 
-        function getRandomInt(max) {
-            return Math.floor(Math.random() * max);
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min) + min);
         }
-        
+
         $(document).ready(function(){
 			appendContent();
 
@@ -44,10 +47,10 @@
         };
         
         function setupData() {
-            i = getRandomInt(vocab.length);
-            translation = vocab[i].translation.split(';')[0];
+            i = getRandomInt(25 * selectedList, 25 * (selectedList + 1));
+            translation = vocab[i].translation.split(';')[0].replace(/\(([^)]+)\)/, '');
             hangeul = vocab[i].hangeul;
-            if (getRandomInt(2) == 0) {
+            if (getRandomInt(0, 2) == 0) {
                 element = hangeul;
                 console.log(translation);                    
                 answer = translation;    
@@ -61,6 +64,8 @@
             }
             document.getElementById("subtext").innerHTML = "Find the " + goal + ".";
             document.getElementById("show-container").innerHTML = "<div id='character'>" + element + "</div></div>";
+
+            document.querySelector("#input-field").value = "";
         }
        
         function getInput() {
@@ -69,19 +74,46 @@
                 setupData();
             }
         }
+
+        function openPopUp() {
+            document.getElementById("popup-container").style.display = "block";
+        }
+
+        function clearPopUp() {
+            document.getElementById("popup-container").style.display = "none";
+            setupData();
+        }
+    
+        function switchList(l) {
+            selectedList = l;
+            setupData();
+        }
     
     </script>
 </head>
 <body>
-    <div>
+    <div id="list-selector">
+        <div class="selector" id="selector1" onclick="switchList(1)">1</div>
+        <div class="selector" id="selector1" onclick="switchList(2)">2</div>
+        <div class="selector" id="selector1" onclick="switchList(3)">3</div>
+        <div class="selector" id="selector1" onclick="switchList(4)">4</div>
+        <div class="selector" id="selector1" onclick="switchList(5)">5</div>
+    </div>
+    <div id="main-container">
         <div id="show-container">Display loading...</div>
         <div id="subtext">Subtext loading...</div>
         <div id="input-container">
             <input class="input-field" id="input-field" type="text" placeholder="Type your answer here">
         </div>
         <div id="next-container">
-            <div id="next-button" onclick="setupData()">Skip</div>
+            <div id="next-button" onclick="openPopUp()">Skip</div>
         </div>
+    </div>
+    <div id="popup-container">
+        <div id="color-top"></div>
+        <div id="">
+        </div>
+        <div id="popup-button" onclick="clearPopUp()">Ok</div>
     </div>
 </body>
 </html>
