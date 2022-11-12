@@ -179,12 +179,12 @@ body {
     background-size: cover;
 }
 
-.wave {
-    background-image: url('./wave.svg');
+#popup-wave {
+    background-image: url('./wave-green.svg');
     text-align: center;
 }
 
-.wave p {
+#popup-wave p {
     margin: 0;
     padding-top: 10px;
     color: white;

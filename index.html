@@ -80,11 +80,27 @@
             resp = document.querySelector("#input-field").value;
             if (resp.toLowerCase() == answer.toLowerCase() 
                         || answer.toLowerCase().includes(resp.toLowerCase())) {
-                setupData();
+                openPopUp(true);
             }
         }
 
-        function openPopUp() {
+        function openPopUp(correct) {
+            if (!correct) {
+                document.getElementById("popup-button")
+                            .style.background
+                            = "linear-gradient(to right, #510a32ff, #ee4540ff)";
+                document.getElementById("popup-wave")
+                            .style.backgroundImage = "url('./wave-red.svg')";
+                document.getElementById("wave-state").innerHTML = "Incorrect";
+            }
+            else {
+                document.getElementById("popup-button")
+                            .style.background
+                            = "linear-gradient(to right, #049b5bff, #32fca7ff)";
+                document.getElementById("popup-wave")
+                            .style.backgroundImage = "url('./wave-green.svg')";
+                document.getElementById("wave-state").innerHTML = "Correct";
+            }
             document.getElementById("popup-container").style.display = "block";
             document.getElementById("popup-word-sub").innerHTML = hangeul;
             document.getElementById("popup-mean-sub").innerHTML = translation;
@@ -122,11 +138,11 @@
                 placeholder="Type your answer here">
         </div>
         <div id="next-container">
-            <div id="next-button" onclick="openPopUp()">Skip</div>
+            <div id="next-button" onclick="openPopUp(false)">Skip</div>
         </div>
     </div>
     <div id="popup-container">
-        <div class="spacer wave"><p>Correct</p></div>
+        <div id="popup-wave" class="spacer"><p id="wave-state">Correct</p></div>
         <div class="popup-space">
             <p id="popup-word-title" class="popup-title">The word was</p>
             <p id="popup-word-sub" class="popup-sub">대학교</p>
