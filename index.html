@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://raw.githubusercontent.com/emmanuelvln/kanaaa/master/imgs/favicon.png" type="image/icon type">
+    <link rel="icon" type="image/icon type"
+        href="https://raw.githubusercontent.com/emmanuelvln/kanaaa/master/imgs/favicon.png">
     <link rel="stylesheet" type="text/css" href="index-style.css">
 
     <title>Eohwiii</title>
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    </script>
     <script type="text/javascript">
         vocab = null;
         answer = "";
+        hangeul = "";
+        translation = "";
         selectedList = 0;
 
         function getRandomInt(min, max) {
@@ -48,7 +53,8 @@
         
         function setupData() {
             i = getRandomInt(25 * selectedList, 25 * (selectedList + 1));
-            translation = vocab[i].translation.split(';')[0].replace(/\(([^)]+)\)/, '');
+            translation = vocab[i].translation
+                        .split(';')[0].replace(/\(([^)]+)\)/, '');
             hangeul = vocab[i].hangeul;
             if (getRandomInt(0, 2) == 0) {
                 element = hangeul;
@@ -62,21 +68,26 @@
                 answer = hangeul;    
                 goal = "translation";
             }
-            document.getElementById("subtext").innerHTML = "Find the " + goal + ".";
-            document.getElementById("show-container").innerHTML = "<div id='character'>" + element + "</div></div>";
+            document.getElementById("subtext")
+                        .innerHTML = "Find the " + goal + ".";
+            document.getElementById("show-container")
+                        .innerHTML = "<div id='character'>" + element + "</div></div>";
 
             document.querySelector("#input-field").value = "";
         }
        
         function getInput() {
             resp = document.querySelector("#input-field").value;
-            if (resp.toLowerCase() == answer.toLowerCase() || answer.toLowerCase().includes(resp.toLowerCase())) {
+            if (resp.toLowerCase() == answer.toLowerCase() 
+                        || answer.toLowerCase().includes(resp.toLowerCase())) {
                 setupData();
             }
         }
 
         function openPopUp() {
             document.getElementById("popup-container").style.display = "block";
+            document.getElementById("popup-word-sub").innerHTML = hangeul;
+            document.getElementById("popup-mean-sub").innerHTML = translation;
         }
 
         function clearPopUp() {
@@ -85,9 +96,12 @@
         }
     
         function switchList(l) {
-            selectedList = l;
+            document.getElementById("selector" + (selectedList + 1))
+                        .style.backgroundColor = "var(--dark)";
+            document.getElementById("selector" + l)
+                        .style.backgroundColor = "var(--gray)";
+            selectedList = l - 1;
             setupData();
-            document.getElementById("selector" + l).style.backgroundColor = "var(--gray)";
         }
     
     </script>
@@ -104,7 +118,8 @@
         <div id="show-container">Display loading...</div>
         <div id="subtext">Subtext loading...</div>
         <div id="input-container">
-            <input class="input-field" id="input-field" type="text" placeholder="Type your answer here">
+            <input class="input-field" id="input-field" type="text"
+                placeholder="Type your answer here">
         </div>
         <div id="next-container">
             <div id="next-button" onclick="openPopUp()">Skip</div>
@@ -113,12 +128,12 @@
     <div id="popup-container">
         <div class="spacer wave"><p>Correct</p></div>
         <div class="popup-space">
-            <p class="popup-title">The word was</p>
-            <p class="popup-sub">대학교</p>
+            <p id="popup-word-title" class="popup-title">The word was</p>
+            <p id="popup-word-sub" class="popup-sub">대학교</p>
         </div>
         <div class="popup-space">
-            <p class="popup-title">Meaning</p>
-            <p class="popup-sub">Ouiouibaguette</p>
+            <p id="popup-mean-title" class="popup-title">Meaning</p>
+            <p id="popup-mean-sub" class="popup-sub">Ouiouibaguette</p>
         </div>
         <div id="popup-button" onclick="clearPopUp()">Done</div>
     </div>
