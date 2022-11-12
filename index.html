@@ -87,6 +87,7 @@
         function switchList(l) {
             selectedList = l;
             setupData();
+            document.getElementById("selector" + l).style.backgroundColor = "var(--gray)";
         }
     
     </script>
@@ -94,10 +95,10 @@
 <body>
     <div id="list-selector">
         <div class="selector" id="selector1" onclick="switchList(1)">1</div>
-        <div class="selector" id="selector1" onclick="switchList(2)">2</div>
-        <div class="selector" id="selector1" onclick="switchList(3)">3</div>
-        <div class="selector" id="selector1" onclick="switchList(4)">4</div>
-        <div class="selector" id="selector1" onclick="switchList(5)">5</div>
+        <div class="selector" id="selector2" onclick="switchList(2)">2</div>
+        <div class="selector" id="selector3" onclick="switchList(3)">3</div>
+        <div class="selector" id="selector4" onclick="switchList(4)">4</div>
+        <div class="selector" id="selector5" onclick="switchList(5)">5</div>
     </div>
     <div id="main-container">
         <div id="show-container">Display loading...</div>
@@ -110,10 +111,16 @@
         </div>
     </div>
     <div id="popup-container">
-        <div id="color-top"></div>
-        <div id="">
+        <div class="spacer wave"><p>Correct</p></div>
+        <div class="popup-space">
+            <p class="popup-title">The word was</p>
+            <p class="popup-sub">대학교</p>
         </div>
-        <div id="popup-button" onclick="clearPopUp()">Ok</div>
+        <div class="popup-space">
+            <p class="popup-title">Meaning</p>
+            <p class="popup-sub">Ouiouibaguette</p>
+        </div>
+        <div id="popup-button" onclick="clearPopUp()">Done</div>
     </div>
 </body>
 </html>
