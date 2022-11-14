@@ -38,7 +38,7 @@
 		});
         
         var appendContent=function(){
-            fetch('https://raw.githubusercontent.com/emmanuelvln/eohwiii/main/vocab.json')
+            fetch('https://raw.githubusercontent.com/emmanuelvln/eohwiii/main/vocablist.json')
                 .then(function (response) {
                     return response.json();
                 })
@@ -52,10 +52,10 @@
         };
         
         function setupData() {
-            i = getRandomInt(25 * selectedList, 25 * (selectedList + 1));
-            translation = vocab[i].translation
+            i = getRandomInt(0,vocab[selectedList].length);
+            translation = vocab[selectedList].content[i].translation
                         .split(';')[0].replace(/\(([^)]+)\)/, '');
-            hangeul = vocab[i].hangeul;
+            hangeul = vocab[selectedList].content[i].hangeul;
             if (getRandomInt(0, 2) == 0) {
                 element = hangeul;
                 console.log(translation);                    
