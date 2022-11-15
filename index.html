@@ -44,6 +44,7 @@
                 })
                 .then(function (data) {
                             vocab = data;
+                            createButtons();
                             setupData();
                 })
                 .catch(function (err) {
@@ -51,6 +52,12 @@
                 });
         };
         
+        function createButtons() {
+            for (i = 1; i <= vocab.length; i++) {
+                $('#list-selector').append("<div class='selector' id='selector" + i + "' onclick='switchList(" + i + ")'>" + i + "</div>");
+            }
+        }
+
         function setupData() {
             i = getRandomInt(0,vocab[selectedList].content.length);
             translation = vocab[selectedList].content[i].translation
@@ -70,7 +77,7 @@
             simpleStrings = answer.replace(';', '').replace(/\(([^)]+)\)/, '').split(',');
             for (j = 0; j < simpleStrings.length; j++)
                 console.log(simpleStrings[j]);
-            document.getElementById("subtext")
+            document.getElementById("indicator")
                         .innerHTML = "Find the " + goal + ".";
             document.getElementById("show-container")
                         .innerHTML = "<div id='character'>" + element + "</div></div>";
@@ -125,6 +132,8 @@
             document.getElementById("selector" + l)
                         .style.backgroundColor = "var(--gray)";
             selectedList = l - 1;
+            document.getElementById("list-prompt")
+                        .innerHTML = "You are studying " + vocab[selectedList].name;
             setupData();
         }
     
@@ -132,15 +141,11 @@
 </head>
 <body>
     <div id="list-selector">
-        <div class="selector" id="selector1" onclick="switchList(1)">1</div>
-        <div class="selector" id="selector2" onclick="switchList(2)">2</div>
-        <div class="selector" id="selector3" onclick="switchList(3)">3</div>
-        <div class="selector" id="selector4" onclick="switchList(4)">4</div>
-        <div class="selector" id="selector5" onclick="switchList(5)">5</div>
     </div>
     <div id="main-container">
+        <div class="subtext" id="list-prompt">You are studying School 1</div>
         <div id="show-container">Display loading...</div>
-        <div id="subtext">Subtext loading...</div>
+        <div class="subtext" id="indicator">Subtext loading...</div>
         <div id="input-container">
             <input class="input-field" id="input-field" type="text"
                 placeholder="Type your answer here">
