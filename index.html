@@ -63,10 +63,13 @@
             }
             else {
                 element = translation;
-                console.log(hangeul);                    
                 answer = hangeul;    
                 goal = "translation";
             }
+            console.log(answer);
+            simpleStrings = answer.replace(';', '').replace(/\(([^)]+)\)/, '').split(',');
+            for (j = 0; j < simpleStrings.length; j++)
+                console.log(simpleStrings[j]);
             document.getElementById("subtext")
                         .innerHTML = "Find the " + goal + ".";
             document.getElementById("show-container")
@@ -77,10 +80,16 @@
        
         function getInput() {
             resp = document.querySelector("#input-field").value;
-            if (resp.toLowerCase() == answer.toLowerCase() 
-                        || answer.toLowerCase().includes(resp.toLowerCase())) {
+            if (resp != "" && resp != " " && isCorrectWord(resp)) {
                 openPopUp(true);
             }
+        }
+        function isCorrectWord(word) {
+            simpleStrings = answer.replace(';', '').replace(/\(([^)]+)\)/, '').split(',');
+            for (i = 0; i < simpleStrings.length; i++)
+                if (simpleStrings[i].toLowerCase().replaceAll(' ', '') == word.toLowerCase().replaceAll(' ', ''))
+                    return true;
+            return false;
         }
 
         function openPopUp(correct) {
