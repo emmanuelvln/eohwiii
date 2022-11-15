@@ -53,6 +53,9 @@
         
         function setupData() {
             i = getRandomInt(0,vocab[selectedList].length);
+	    console.log(i);
+	    console.log(selectedList);
+	    console.log(vocab[selectedList]);
             translation = vocab[selectedList].content[i].translation
                         .split(';')[0].replace(/\(([^)]+)\)/, '');
             hangeul = vocab[selectedList].content[i].hangeul;
