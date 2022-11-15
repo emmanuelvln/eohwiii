@@ -52,16 +52,12 @@
         };
         
         function setupData() {
-            i = getRandomInt(0,vocab[selectedList].length);
-	    console.log(i);
-	    console.log(selectedList);
-	    console.log(vocab[selectedList]);
+            i = getRandomInt(0,vocab[selectedList].content.length);
             translation = vocab[selectedList].content[i].translation
                         .split(';')[0].replace(/\(([^)]+)\)/, '');
             hangeul = vocab[selectedList].content[i].hangeul;
             if (getRandomInt(0, 2) == 0) {
                 element = hangeul;
-                console.log(translation);                    
                 answer = translation;    
                 goal = "meaning";
             }
