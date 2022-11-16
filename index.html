@@ -49,7 +49,7 @@
 
         function setupData() {
             for (i = 0; i < vocab.length; i++) {
-                        selected = localStorage.getItem('selectedLists');
+                        selected = JSON.parse(localStorage.getItem('selectedLists'));
                         if (selected.includes(i))
                             iconLink = checkLink;
                         else
@@ -75,7 +75,7 @@
         function start() {
             if (selected.length == 0)
                         return;
-            localStorage.setItem('selectedLists', selected);
+            localStorage.setItem('selectedLists', JSON.stringify(selected)); 
 			location.href = 'study.html';
         }
     </script>

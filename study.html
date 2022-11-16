@@ -28,10 +28,9 @@
         }
 
         $(document).ready(function(){
-            selected = localStorage.getItem('selectedLists');
+            selected = JSON.parse(localStorage.getItem('selectedLists'));
             if (selected == null || selected == [])
 			    location.href = 'index.html';
-            
 			appendContent();
 
             input = document.querySelector("#input-field");
@@ -56,6 +55,7 @@
         
         function setupData() {
             studiedList = selected[getRandomInt(0,selected.length)];
+            console.log(studiedList);
             i = getRandomInt(0, vocab[studiedList].content.length);
             translation = vocab[studiedList].content[i].translation
                         .split(';')[0].replace(/\(([^)]+)\)/, '');
