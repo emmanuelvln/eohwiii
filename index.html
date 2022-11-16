@@ -49,7 +49,8 @@
 
         function setupData() {
             for (i = 0; i < vocab.length; i++) {
-                        if (selected.includes(i))
+                        oldLists = localStorage.getItem('selectedLists');
+                        if (oldLists.includes(i))
                             iconLink = checkLink;
                         else
                             iconLink = plusLink;
@@ -72,6 +73,8 @@
         }
 
         function start() {
+            if (selected.length == 0)
+                        return;
             localStorage.setItem('selectedLists', selected);
 			location.href = 'study.html';
         }

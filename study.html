@@ -18,7 +18,7 @@
         answer = "";
         hangeul = "";
         translation = "";
-        selectedList = 0;
+        studiedList = 0;
         selected = [];
 
         function getRandomInt(min, max) {
@@ -55,17 +55,15 @@
                 });
         };
         
-        function createButtons() {
-            for (i = 1; i <= vocab.length; i++) {
-                $('#list-selector').append("<div class='selector' id='selector" + i + "' onclick='switchList(" + i + ")'>" + i + "</div>");
-            }
-        }
-
         function setupData() {
-            i = getRandomInt(0,vocab[selectedList].content.length);
-            translation = vocab[selectedList].content[i].translation
+            studiedList = selected[getRandomInt(0,selected.length)];
+            i = getRandomInt(0, vocab[studiedList].content.length);
+            translation = vocab[studiedList].content[i].translation
                         .split(';')[0].replace(/\(([^)]+)\)/, '');
-            hangeul = vocab[selectedList].content[i].hangeul;
+            hangeul = vocab[studiedList].content[i].hangeul;
+            
+            document.getElementById("list-prompt").innerHTML = "You are studying " + vocab[studiedList].name;
+    
             if (getRandomInt(0, 2) == 0) {
                 element = hangeul;
                 answer = translation;    
@@ -128,23 +126,9 @@
             document.getElementById("popup-container").style.display = "none";
             setupData();
         }
-    
-        function switchList(l) {
-            document.getElementById("selector" + (selectedList + 1))
-                        .style.backgroundColor = "var(--dark)";
-            document.getElementById("selector" + l)
-                        .style.backgroundColor = "var(--gray)";
-            selectedList = l - 1;
-            document.getElementById("list-prompt")
-                        .innerHTML = "You are studying " + vocab[selectedList].name;
-            setupData();
-        }
-    
     </script>
 </head>
 <body>
-    <div id="list-selector">
-    </div>
     <div id="main-container">
         <div class="subtext" id="list-prompt">You are studying School 1</div>
         <div id="show-container">Display loading...</div>
