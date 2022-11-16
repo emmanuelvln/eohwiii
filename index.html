@@ -49,8 +49,8 @@
 
         function setupData() {
             for (i = 0; i < vocab.length; i++) {
-                        oldLists = localStorage.getItem('selectedLists');
-                        if (oldLists.includes(i))
+                        selected = localStorage.getItem('selectedLists');
+                        if (selected.includes(i))
                             iconLink = checkLink;
                         else
                             iconLink = plusLink;
