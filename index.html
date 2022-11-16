@@ -14,11 +14,10 @@
         src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
     </script>
     <script type="text/javascript">
+        plusLink = "https://cdn-icons-png.flaticon.com/512/1828/1828819.png";
+        checkLink = "https://cdn-icons-png.flaticon.com/512/1828/1828643.png";
         vocab = null;
-        answer = "";
-        hangeul = "";
-        translation = "";
-        selectedList = 0;
+        selected = [];
 
         function getRandomInt(min, max) {
             min = Math.ceil(min);
@@ -28,13 +27,12 @@
 
         $(document).ready(function(){
 			appendContent();
-
-            input = document.querySelector("#input-field");
-            input.addEventListener('keyup', (event) => {
-                getInput();
-            });
+            
+            if (!navigator.userAgent.match(/Android/i) && !navigator.userAgent.match(/iPhone/i)) {
+               document.getElementById("app").style.width = "500px"; 
+            }
 		});
-        
+
         var appendContent=function(){
             fetch('https://raw.githubusercontent.com/emmanuelvln/eohwiii/main/vocablist.json')
                 .then(function (response) {
@@ -42,127 +40,53 @@
                 })
                 .then(function (data) {
                             vocab = data;
-                            createButtons();
                             setupData();
                 })
                 .catch(function (err) {
                     console.log('error: ' + err);
                 });
         };
-        
-        function createButtons() {
-            for (i = 1; i <= vocab.length; i++) {
-                $('#list-selector').append("<div class='selector' id='selector" + i + "' onclick='switchList(" + i + ")'>" + i + "</div>");
-            }
-        }
 
         function setupData() {
-            i = getRandomInt(0,vocab[selectedList].content.length);
-            translation = vocab[selectedList].content[i].translation
-                        .split(';')[0].replace(/\(([^)]+)\)/, '');
-            hangeul = vocab[selectedList].content[i].hangeul;
-            if (getRandomInt(0, 2) == 0) {
-                element = hangeul;
-                answer = translation;    
-                goal = "meaning";
+            for (i = 0; i < vocab.length; i++) {
+                        if (selected.includes(i))
+                            iconLink = checkLink;
+                        else
+                            iconLink = plusLink;
+                        $('#list-container').append("<div class='list-item'><div><p id='item-name'>" + vocab[i].name  + "</p><p id='item-count'>" + vocab[i].content.length + " items</p></div><div class='checker' onclick='addItem(" + i + ")'><img id='status-image" + i + "' class='list-status' src='" + iconLink + "'></div></div>");
+
+            }
+        }
+
+        function addItem(n) {
+            if (selected.includes(n)) {
+                index = selected.indexOf(n);
+                selected.splice(index, 1); 
+                document.getElementById("status-image" + n).src = plusLink;
             }
             else {
-                element = translation;
-                answer = hangeul;    
-                goal = "translation";
+                selected.push(n);
+                document.getElementById("status-image" + n).src = checkLink;
             }
-            console.log(answer);
-            simpleStrings = answer.replace(';', '').replace(/\(([^)]+)\)/, '').split(',');
-            for (j = 0; j < simpleStrings.length; j++)
-                console.log(simpleStrings[j]);
-            document.getElementById("indicator")
-                        .innerHTML = "Find the " + goal + ".";
-            document.getElementById("show-container")
-                        .innerHTML = "<div id='character'>" + element + "</div></div>";
-
-            document.querySelector("#input-field").value = "";
-        }
-       
-        function getInput() {
-            resp = document.querySelector("#input-field").value;
-            if (resp != "" && resp != " " && isCorrectWord(resp)) {
-                openPopUp(true);
-            }
-        }
-        function isCorrectWord(word) {
-            simpleStrings = answer.replace(';', '').replace(/\(([^)]+)\)/, '').split(',');
-            for (i = 0; i < simpleStrings.length; i++)
-                if (simpleStrings[i].toLowerCase().replaceAll(' ', '') == word.toLowerCase().replaceAll(' ', ''))
-                    return true;
-            return false;
+            document.getElementById('list-count').innerHTML = selected.length + " selected lists";
         }
 
-        function openPopUp(correct) {
-            if (!correct) {
-                document.getElementById("popup-button")
-                            .style.background
-                            = "linear-gradient(to right, #510a32ff, #ee4540ff)";
-                document.getElementById("popup-wave")
-                            .style.backgroundImage = "url('./wave-red.svg')";
-                document.getElementById("wave-state").innerHTML = "Incorrect";
-            }
-            else {
-                document.getElementById("popup-button")
-                            .style.background
-                            = "linear-gradient(to right, #049b5bff, #32fca7ff)";
-                document.getElementById("popup-wave")
-                            .style.backgroundImage = "url('./wave-green.svg')";
-                document.getElementById("wave-state").innerHTML = "Correct";
-            }
-            document.getElementById("popup-container").style.display = "block";
-            document.getElementById("popup-word-sub").innerHTML = hangeul;
-            document.getElementById("popup-mean-sub").innerHTML = translation;
+        function start() {
+            localStorage.setItem('selectedLists', selected);
+			location.href = 'study.html';
         }
-
-        function clearPopUp() {
-            document.getElementById("popup-container").style.display = "none";
-            setupData();
-        }
-    
-        function switchList(l) {
-            document.getElementById("selector" + (selectedList + 1))
-                        .style.backgroundColor = "var(--dark)";
-            document.getElementById("selector" + l)
-                        .style.backgroundColor = "var(--gray)";
-            selectedList = l - 1;
-            document.getElementById("list-prompt")
-                        .innerHTML = "You are studying " + vocab[selectedList].name;
-            setupData();
-        }
-    
     </script>
 </head>
 <body>
-    <div id="list-selector">
-    </div>
-    <div id="main-container">
-        <div class="subtext" id="list-prompt">You are studying School 1</div>
-        <div id="show-container">Display loading...</div>
-        <div class="subtext" id="indicator">Subtext loading...</div>
-        <div id="input-container">
-            <input class="input-field" id="input-field" type="text"
-                placeholder="Type your answer here">
+    <div id="app">
+        <div id="wave" class="spacer"></div>
+        <div id="start-container">
+            <div id="title">Choose the list(s) you wish to study!</div>
+            <div id="start-button" onclick="start()"><p>Start studying now!</p></div>
+            <div id="list-count">0 selected lists</div>
         </div>
-        <div id="next-container">
-            <div id="next-button" onclick="openPopUp(false)">Skip</div>
+        <div id="list-container">
         </div>
-    </div>
-    <div id="popup-container">
-        <div id="popup-wave" class="spacer"><p id="wave-state">Correct</p></div>
-        <div class="popup-space">
-            <p id="popup-word-title" class="popup-title">The word was</p>
-            <p id="popup-word-sub" class="popup-sub">대학교</p>
-        </div>
-        <div class="popup-space">
-            <p id="popup-mean-title" class="popup-title">Meaning</p>
-            <p id="popup-mean-sub" class="popup-sub">Ouiouibaguette</p>
-        </div>
-        <div id="popup-button" onclick="clearPopUp()">Done</div>
     </div>
 </body>
 </html>

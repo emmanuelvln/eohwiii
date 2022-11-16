@@ -1,0 +1,221 @@
+@font-face {
+    font-family: Evogria;
+    src: url('fonts/Evogria.otf');
+}
+@font-face {
+    font-family: Sofia;
+    src: url('fonts/Sofia.otf');
+}
+@font-face {
+    font-family: Blanch;
+    src: url('fonts/Blanch.otf');
+}
+@font-face {
+    font-family: KaushanScript;
+    src: url('fonts/KaushanScript.otf');
+}
+@font-face {
+    font-family: ConfigCondensed;
+    src: url('fonts/ConfigCondensed.otf');
+}
+@font-face {
+    font-family: Bahnschrift;
+    src: url('fonts/Bahnschrift.TTF');
+}
+@font-face {
+    font-family: PlexSansKR;
+    src: url('fonts/PlexSansKR.ttf');
+}
+:root {
+    --light: rgb(57, 57, 94);
+    --dark: rgb(30, 30, 55);
+    --gray: #262626ff;
+}
+
+html {
+    background-color: var(--light);
+    font-family: Bahnschrift;
+}
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select:-moz-none;
+    -ms-user-select:none;
+    user-select:none}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#show-container {
+    margin-top: 20px;
+    background-color: var(--gray);
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: PlexSansKR;
+    font-size: 18px;
+}
+
+.subtext {
+    margin-top: 15px;
+    width: 300px;
+    height: 20px;
+    font-size: 15px;
+    font-family: Bahnschrift;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#input-field {
+    margin-top: 15px;
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Bahnschrift;
+}
+
+#next-container {
+    margin-top: 15px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#next-button {
+    font-family: Bahnschrift;
+    font-size: 15px;
+    color: white;
+    width: 60px;
+    height: 30px;
+    background-color: var(--dark);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#popup-container {
+    width: 400px;
+    height: 340px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40px;
+    background-color: #e6e6e6ff;
+    display: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#color-top {
+    width: 400px;
+    height: 45px;
+    top: 0px;
+    overflow: hidden;
+    background-color: green;
+    border-radius: 30px 30px 0px 0px;
+}
+
+#popup-button {
+    background: linear-gradient(to right, #049b5bff, #32fca7ff);
+    color: white;
+    font-family: Bahnschrift;
+    height: 30px;
+    width: 90px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+#list-selector {
+    margin-right: auto;
+    margin-left: auto;
+    height: 45px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.selector {
+    background-color: var(--dark);
+    border-radius: 50px;
+    height: 20px;
+    width: 20px;
+    color: white;
+    font-family: Bahnschrift;
+    font-size: 15px;
+    text-align: center;
+}
+
+#selector1 {
+    background-color: var(--gray);
+}
+
+.spacer {
+    aspect-ratio: 300/85;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#popup-wave {
+    background-image: url('./wave-green.svg');
+    text-align: center;
+}
+
+#popup-wave p {
+    margin: 0;
+    padding-top: 10px;
+    color: white;
+    font-family: Bahnschrift;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.popup-space {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+    height: 80px;
+    margin-bottom: 13px;
+}
+
+.popup-title {
+    color: #191919ff;
+    font-weight: bold;
+    font-size: 23px;
+    padding-top: 10px;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.popup-sub {
+    color: #b4b4b4ff;
+    font-size: 20px;
+    font-family: PlexSansKR;
+    padding-left: 15px;
+    margin: 0;
+}
