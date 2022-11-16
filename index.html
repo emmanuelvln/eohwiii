@@ -50,13 +50,15 @@
         function setupData() {
             for (i = 0; i < vocab.length; i++) {
                         selected = JSON.parse(localStorage.getItem('selectedLists'));
-                        if (selected.includes(i))
+                        if (selected == null)
+                            selected = [];
+                        if (selected != [] && selected.includes(i))
                             iconLink = checkLink;
                         else
                             iconLink = plusLink;
                         $('#list-container').append("<div class='list-item'><div><p id='item-name'>" + vocab[i].name  + "</p><p id='item-count'>" + vocab[i].content.length + " items</p></div><div class='checker' onclick='addItem(" + i + ")'><img id='status-image" + i + "' class='list-status' src='" + iconLink + "'></div></div>");
-
             }
+            document.getElementById('list-count').innerHTML = selected.length + " selected lists";
         }
 
         function addItem(n) {
