@@ -54,7 +54,7 @@ body {
 }
 
 #app {
-    width: 300px;
+    width: 500px;
     height: 100vh;
     background-color: #e6e6e6ff;
 }
@@ -107,7 +107,7 @@ body {
     margin-left: auto;
     border-radius: 10px;
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 300px);
     margin-bottom: 13px; 
     display: flex;
     flex-direction: column;
@@ -117,30 +117,37 @@ body {
 }
 
 .list-item {
-    width: 81%;
-    height: 40px;
+    width: 80%;
+    min-height: 50px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 30px;
     margin-top: 6px;
     margin-bottom: 6px;
     display: grid;
-    grid-template-columns: 80% 40px;
+    grid-template-columns: 90% 10%;
 }
 
 #item-name {
     width: 50%;
     margin-right: 20px;
-    margin: 0 0 0 20px;
+    margin: 10px 0 0 30px;
 }
 
 #item-count {
     font-size: 10px;
     color: var(--gray); 
-    margin: 0 0 0 20px;
+    margin: 0 0 0 30px;
 }
 
 .checker {
-    height: 30px;
-    width: 30px;
-    background-color: var(--gray);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-status {
+    height: 20px;
+    width: 20px;
 }

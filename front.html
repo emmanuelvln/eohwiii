@@ -43,10 +43,8 @@
 
         function setupData() {
             for (i = 0; i < vocab.length; i++) {
-                        $('#list-container').append("<div class='list-item'><div><p id='item-name'>" + vocab[i].name  + "</p><p id='item-count'>" + vocab[i].content.length + " items</p></div><div class='checker' onclick='addItem(" + i + ")'></div></div>");
-            }
-            for (i = 0; i < vocab.length; i++) {
-                        $('#list-container').append("<div class='list-item'><div><p id='item-name'>" + vocab[i].name  + "</p><p id='item-count'>" + vocab[i].content.length + " items</p></div><div class='checker' onclick='addItem(" + i + ")'></div></div>");
+                        $('#list-container').append("<div class='list-item'><div><p id='item-name'>" + vocab[i].name  + "</p><p id='item-count'>" + vocab[i].content.length + " items</p></div><div class='checker' onclick='addItem(" + i + ")'><img id='status-image" + i + "' class='list-status' src='https://cdn-icons-png.flaticon.com/512/1828/1828819.png'></div></div>");
+
             }
         }
 
@@ -54,9 +52,11 @@
             if (selected.includes(n)) {
                 index = selected.indexOf(n);
                 selected.splice(index, 1); 
+                document.getElementById("status-image" + n).src = "https://cdn-icons-png.flaticon.com/512/1828/1828819.png";
             }
             else {
                 selected.push(n);
+                document.getElementById("status-image" + n).src = "https://cdn-icons-png.flaticon.com/512/1828/1828643.png";
             }
             document.getElementById('list-count').innerHTML = selected.length + " selected lists";
         }
