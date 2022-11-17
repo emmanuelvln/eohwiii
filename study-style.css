@@ -107,6 +107,12 @@ body {
     font-size: 28px;
 }
 
+#back-button {
+    position: absolute;
+    top: 21px;
+    left: 47px;
+}
+
 #list-prompt {
     display: flex;
     align-items: center;

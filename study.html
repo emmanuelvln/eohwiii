@@ -33,6 +33,7 @@
 			    location.href = 'index.html';
             if (!navigator.userAgent.match(/Android/i) && !navigator.userAgent.match(/iPhone/i)) {
                document.getElementById("app").style.width = "500px"; 
+               document.getElementById("back-button").style.left = "calc(100vw / 2 - 250px + 47px)"; 
             }
 			appendContent();
 
@@ -141,6 +142,7 @@
                 <div id="subtitle">Learn korean online</div>
             </div>
         </div>
+        <div id="back-button" onclick="goHome()"><img src="back.png" height="46px"></div>
         <div id="list-prompt"><img id="list-promp-icon" src="list-icon.png"><p id="list-prompt-text">School 1</p></div>
         <div id="show-container"><p>Display loading...</p></div>
         <div id="indicator">Subtext loading...</div>
