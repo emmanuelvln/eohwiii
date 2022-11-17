@@ -79,7 +79,7 @@ body {
 }
 
 #top-wave {
-    aspect-ratio: 500/205;
+    aspect-ratio: 100vh/205;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
