@@ -56,7 +56,8 @@ body {
     -webkit-user-select: none;
     -moz-user-select:-moz-none;
     -ms-user-select:none;
-    user-select:none}
+    user-select:none
+}
 
 body {
     margin: 0;
@@ -68,7 +69,7 @@ body {
 }
 
 #app {
-    width: 500px;
+    width: 100vh;
     height: 100vh;
     background-color: var(--gwhite);
     display: flex;
