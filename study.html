@@ -26,6 +26,13 @@
             max = Math.floor(max);
             return Math.floor(Math.random() * (max - min) + min);
         }
+	
+	$(document).ready(function(){
+	    appendContent();
+            if (!navigator.userAgent.match(/Android/i) && !navigator.userAgent.match(/iPhone/i)) {
+               document.getElementById("app").style.width = "500px"; 
+            }
+	});
 
         $(document).ready(function(){
             selected = JSON.parse(localStorage.getItem('selectedLists'));
