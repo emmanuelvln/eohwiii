@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/icon type"
-        href="https://raw.githubusercontent.com/emmanuelvln/eohwiii/icon.png">
+        href="https://raw.githubusercontent.com/emmanuelvln/eohwiii/main/icon.png">
     <link rel="stylesheet" type="text/css" href="study-style.css">
 
     <title>Eohwiii</title>
@@ -26,18 +26,14 @@
             max = Math.floor(max);
             return Math.floor(Math.random() * (max - min) + min);
         }
-	
-	$(document).ready(function(){
-	    appendContent();
-            if (!navigator.userAgent.match(/Android/i) && !navigator.userAgent.match(/iPhone/i)) {
-               document.getElementById("app").style.width = "500px"; 
-            }
-	});
 
         $(document).ready(function(){
             selected = JSON.parse(localStorage.getItem('selectedLists'));
             if (selected == null || selected == [])
 			    location.href = 'index.html';
+            if (!navigator.userAgent.match(/Android/i) && !navigator.userAgent.match(/iPhone/i)) {
+               document.getElementById("app").style.width = "500px"; 
+            }
 			appendContent();
 
             input = document.querySelector("#input-field");
