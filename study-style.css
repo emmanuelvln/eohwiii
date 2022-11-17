@@ -26,10 +26,25 @@
     font-family: PlexSansKR;
     src: url('fonts/PlexSansKR.ttf');
 }
+@font-face {
+    font-family: UbuntuBold;
+    src: url('fonts/UbuntuBold.ttf');
+}
+@font-face {
+    font-family: UbuntuLight;
+    src: url('fonts/UbuntuLight.ttf');
+}
+@font-face {
+    font-family: LotteMartBold;
+    src: url('fonts/LotteMartBold.ttf');
+}
 :root {
-    --light: rgb(57, 57, 94);
-    --dark: rgb(30, 30, 55);
     --gray: #262626ff;
+    --dgray: #323232ff;
+    --gwhite: #f0f0f0ff;
+    --lgray: #b4b4b4ff;
+    --blue: #3363f2ff;
+    --pink: #fb82c8ff;
 }
 
 html {
@@ -49,63 +64,128 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: var(--gray);
+}
+
+#app {
+    width: 500px;
+    height: 100vh;
+    background-color: var(--gwhite);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+#top-wave {
+    aspect-ratio: 500/205;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./top-wave.svg');
+}
+
+#title-container {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+#title {
+    font-family: UbuntuBold;
+    font-size: 45px;
+}
+
+#subtitle {
+    font-family: UbuntuLight;
+    font-size: 28px;
+}
+
+#list-prompt {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#list-prompt p {
+    color: var(--dgray);
+    padding: 0px 0px 0px 13px;
+    margin: 0px;
+    font-size: 26px;
+    font-family: Bahnschrift;
+    font-weight: 600;
+}
+
+#list-promp-icon {
+    height: 29px;
 }
 
 #show-container {
-    margin-top: 20px;
-    background-color: var(--gray);
-    width: 300px;
-    height: 50px;
+    background-color: white;
+    width: 76%;
+    height: 73px;
+    margin-top: 17px;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-family: PlexSansKR;
-    font-size: 18px;
+    font-family: LotteMartBold;
 }
 
-.subtext {
-    margin-top: 15px;
-    width: 300px;
-    height: 20px;
-    font-size: 15px;
+#show-container p {
+    color: var(--dgray);
+    font-size: 24px;
+}
+
+#indicator {
+    margin-top: 45px;
+    display: block;
+    font-size: 27px;
     font-family: Bahnschrift;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-weight: 600;
+    color: var(--dgray);;
+}
+
+#input-container {
+    width: 76%;
+    height: 73px;
+    margin-top: 10px;
 }
 
 #input-field {
-    margin-top: 15px;
     background-color: white;
-    width: 300px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
     text-align: center;
-    font-family: Bahnschrift;
-}
-
-#next-container {
-    margin-top: 15px;
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-family: LotteMartBold;
+    font-size: 20px;
+    border: none;
 }
 
 #next-button {
     font-family: Bahnschrift;
     font-size: 15px;
+    margin-top: 20px;
     color: white;
-    width: 60px;
-    height: 30px;
-    background-color: var(--dark);
+    width: 132px;
+    height: 40px;
+    background: linear-gradient(to right, var(--blue), var(--pink));
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#next-button:hover {
+    filter: brightness(0.9);
+    cursor: pointer;
 }
 
 #popup-container {

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/icon type"
-        href="https://raw.githubusercontent.com/emmanuelvln/kanaaa/master/imgs/favicon.png">
+        href="https://raw.githubusercontent.com/emmanuelvln/eohwiii/icon.png">
     <link rel="stylesheet" type="text/css" href="study-style.css">
 
     <title>Eohwiii</title>
@@ -61,7 +61,7 @@
                         .split(';')[0].replace(/\(([^)]+)\)/, '');
             hangeul = vocab[studiedList].content[i].hangeul;
             
-            document.getElementById("list-prompt").innerHTML = "You are studying " + vocab[studiedList].name;
+            document.getElementById("list-prompt-text").innerHTML = vocab[studiedList].name;
     
             if (getRandomInt(0, 2) == 0) {
                 element = hangeul;
@@ -78,9 +78,8 @@
             for (j = 0; j < simpleStrings.length; j++)
                 console.log(simpleStrings[j]);
             document.getElementById("indicator")
-                        .innerHTML = "Find the " + goal + ".";
-            document.getElementById("show-container")
-                        .innerHTML = "<div id='character'>" + element + "</div></div>";
+                        .innerHTML = "Find the " + goal;
+            document.getElementById("show-container").innerHTML = "<p>" + element + "</p>";
 
             document.querySelector("#input-field").value = "";
         }
@@ -132,18 +131,21 @@
     </script>
 </head>
 <body>
-    <div id="main-container">
-        <div id="index-button" onclick="goHome()"><img src="home-icon.png" height="25px" width="25px"></div>
-        <div class="subtext" id="list-prompt">You are studying School 1</div>
-        <div id="show-container">Display loading...</div>
-        <div class="subtext" id="indicator">Subtext loading...</div>
+    <div id="app">
+        <div id="top-wave">
+            <div id="title-container">
+                <div id="title">Eohwiii</div>
+                <div id="subtitle">Learn korean online</div>
+            </div>
+        </div>
+        <div id="list-prompt"><img id="list-promp-icon" src="list-icon.png"><p id="list-prompt-text">School 1</p></div>
+        <div id="show-container"><p>Display loading...</p></div>
+        <div id="indicator">Subtext loading...</div>
         <div id="input-container">
             <input class="input-field" id="input-field" type="text"
                 placeholder="Type your answer here">
         </div>
-        <div id="next-container">
-            <div id="next-button" onclick="openPopUp(false)">Skip</div>
-        </div>
+        <div id="next-button" onclick="openPopUp(false)">Skip</div>
     </div>
     <div id="popup-container">
         <div id="popup-wave" class="spacer"><p id="wave-state">Correct</p></div>
