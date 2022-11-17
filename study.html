@@ -125,10 +125,15 @@
             document.getElementById("popup-container").style.display = "none";
             setupData();
         }
+
+        function goHome() {
+			location.href = 'index.html';
+        }
     </script>
 </head>
 <body>
     <div id="main-container">
+        <div id="index-button" onclick="goHome()"><img src="home-icon.png" height="25px" width="25px"></div>
         <div class="subtext" id="list-prompt">You are studying School 1</div>
         <div id="show-container">Display loading...</div>
         <div class="subtext" id="indicator">Subtext loading...</div>

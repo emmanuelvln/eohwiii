@@ -219,3 +219,16 @@ body {
     padding-left: 15px;
     margin: 0;
 }
+
+#index-button {
+    margin-right: auto;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: var(--gray);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
