@@ -39,7 +39,10 @@
 
             input = document.querySelector("#input-field");
             input.addEventListener('keyup', (event) => {
-                getInput();
+                if (event.key == 'Enter' && document.querySelector("#input-field").value != '')
+                   openPopUp(false); 
+                else
+                    getInput();
             });
 		});
         
@@ -120,12 +123,14 @@
                 document.getElementById("wave-state").innerHTML = "Correct";
             }
             document.getElementById("popup-container").style.display = "block";
+            document.getElementById("filter").style.display = "block";
             document.getElementById("popup-word-sub").innerHTML = hangeul;
             document.getElementById("popup-mean-sub").innerHTML = translation;
         }
 
         function clearPopUp() {
             document.getElementById("popup-container").style.display = "none";
+            document.getElementById("filter").style.display = "none";
             setupData();
         }
 
@@ -152,6 +157,7 @@
         </div>
         <div id="next-button" onclick="openPopUp(false)">Skip</div>
     </div>
+    <div id="filter"></div>
     <div id="popup-container">
         <div id="popup-wave" class="spacer"><p id="wave-state">Correct</p></div>
         <div class="popup-space">
