@@ -13,84 +13,25 @@
     <script type="text/javascript"
         src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
     </script>
-    <script type="text/javascript">
-        plusLink = "https://cdn-icons-png.flaticon.com/512/1828/1828819.png";
-        checkLink = "https://cdn-icons-png.flaticon.com/512/1828/1828643.png";
-        vocab = null;
-        selected = [];
-
-        function getRandomInt(min, max) {
-            min = Math.ceil(min);
-            max = Math.floor(max);
-            return Math.floor(Math.random() * (max - min) + min);
-        }
-
-        $(document).ready(function(){
-			appendContent();
-            
-            if (!navigator.userAgent.match(/Android/i) && !navigator.userAgent.match(/iPhone/i)) {
-               document.getElementById("app").style.width = "500px"; 
-            }
-		});
-
-        var appendContent=function(){
-            fetch('https://raw.githubusercontent.com/emmanuelvln/eohwiii/main/vocablist.json')
-                .then(function (response) {
-                    return response.json();
-                })
-                .then(function (data) {
-                            vocab = data;
-                            setupData();
-                })
-                .catch(function (err) {
-                    console.log('error: ' + err);
-                });
-        };
-
-        function setupData() {
-            for (i = 0; i < vocab.length; i++) {
-                        selected = JSON.parse(localStorage.getItem('selectedLists'));
-                        if (selected == null)
-                            selected = [];
-                        if (selected != [] && selected.includes(i))
-                            iconLink = checkLink;
-                        else
-                            iconLink = plusLink;
-                        $('#list-container').append("<div class='list-item'><div><p id='item-name'>" + vocab[i].name  + "</p><p id='item-count'>" + vocab[i].content.length + " items</p></div><div class='checker' onclick='addItem(" + i + ")'><img id='status-image" + i + "' class='list-status' src='" + iconLink + "'></div></div>");
-            }
-            document.getElementById('list-count').innerHTML = selected.length + " selected lists";
-        }
-
-        function addItem(n) {
-            if (selected.includes(n)) {
-                index = selected.indexOf(n);
-                selected.splice(index, 1); 
-                document.getElementById("status-image" + n).src = plusLink;
-            }
-            else {
-                selected.push(n);
-                document.getElementById("status-image" + n).src = checkLink;
-            }
-            document.getElementById('list-count').innerHTML = selected.length + " selected lists";
-        }
-
-        function start() {
-            if (selected.length == 0)
-                        return;
-            localStorage.setItem('selectedLists', JSON.stringify(selected)); 
-			location.href = 'study.html';
-        }
-    </script>
+    <script src="index.js"></script>
 </head>
 <body>
     <div id="app">
-        <div id="wave" class="spacer"></div>
-        <div id="start-container">
-            <div id="title">Choose the list(s) you wish to study!</div>
-            <div id="start-button" onclick="start()"><p>Start studying now!</p></div>
-            <div id="list-count">0 selected lists</div>
+        <div id="top-wave">
+            <div id="title-container">
+                <div id="title">Eohwiii</div>
+                <div id="subtitle">Learn korean online</div>
+            </div>
         </div>
-        <div id="list-container">
+        <div id="start-container">
+            <div id="prompter">Choose the lists you wish to study</div>
+            <div id="start-button" onclick="start()"><p>Get started</p></div>
+            <div id="info-container">
+                <div id="list-count"><img src="list-icon-gray.png"><p>studying 2 lists</p></div>
+                <div id="item-count"><img src="item-icon.png"><p>studying 42 items</p></div>
+            </div>
+        </div>
+        <div id="list-container"></div>
         </div>
     </div>
 </body>

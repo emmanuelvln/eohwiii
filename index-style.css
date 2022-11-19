@@ -26,15 +26,30 @@
     font-family: PlexSansKR;
     src: url('fonts/PlexSansKR.ttf');
 }
+@font-face {
+    font-family: UbuntuBold;
+    src: url('fonts/UbuntuBold.ttf');
+}
+@font-face {
+    font-family: UbuntuLight;
+    src: url('fonts/UbuntuLight.ttf');
+}
+@font-face {
+    font-family: LotteMartBold;
+    src: url('fonts/LotteMartBold.ttf');
+}
 :root {
-    --light: rgb(57, 57, 94);
-    --dark: rgb(30, 30, 55);
     --gray: #262626ff;
+    --dgray: #323232ff;
+    --gwhite: #f0f0f0ff;
+    --lgray: #b4b4b4ff;
+    --blue: #3363f2ff;
+    --pink: #fb82c8ff;
 }
 
 html {
     font-family: Bahnschrift;
-    background-color: var(--gray);
+    background-color: var(--gwhite);
 }
 
 body 
@@ -55,60 +70,108 @@ body {
 
 #app {
     width: 100vw;
-    height: 100vh;
-    background-color: #e6e6e6ff;
+    height: 80vh;
+    background-color: var(--gwhite);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
 }
 
-.spacer {
-    aspect-ratio: 300/85;
+#top-wave {
+    aspect-ratio: 500/205;
     width: 100%;
+    min-width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-image: url('./top-wave.svg');
 }
 
-#wave {
-    background-image: url('./wave-blue.svg');
-    text-align: center;
+#title-container {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+#title {
+    font-family: UbuntuBold;
+    font-size: 45px;
+}
+
+#subtitle {
+    font-family: UbuntuLight;
+    font-size: 28px;
 }
 
 #start-container {
-    margin-right: auto;
-    margin-left: auto;
-    background-color: white;
+    margin: 0 auto 0 auto;
     border-radius: 10px;
-    width: 81%;
-    height: 80px;
-    margin-bottom: 13px;
+    width: 100%;
+    height: 135px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
 
+#prompter {
+    font-family: Bahnschrift;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--dgray);
+}
+
 #start-button {
-    width: 60%;
-    height: 40px;
-    background-color: var(--dark);
+    width: 187px;
+    height: 49px;
+    background: linear-gradient(to right, var(--blue), var(--pink));
     border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+#start-button p {
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+#info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-top: 15px;
+}
+
+#list-count, #item-count{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-#start-button p {
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
+#list-count img, #item-count img{
+    height: 18px;
+}
+
+#list-count p, #item-count p {
+    font-size: 16px;
+    margin: 0 0 0 5px;
+    color: var(--lgray);
 }
 
 #list-container {
-    margin-right: auto;
-    margin-left: auto;
+    margin: 35px auto 0 auto;
     border-radius: 10px;
     width: 100%;
     height: calc(100vh - 300px);
-    margin-bottom: 13px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,25 +181,48 @@ body {
 
 .list-item {
     width: 80%;
-    min-height: 50px;
-    background-color: white;
-    border-radius: 30px;
-    margin-top: 6px;
-    margin-bottom: 6px;
+    min-height: 70px;
     display: grid;
-    grid-template-columns: 90% 10%;
+    grid-template-columns: 15% 75% 10%;
+    background-color: var(--gwhite);
+    background-position: center;
+    transition: background 0.8s;
+    padding: 15px 15px 15px 15px;
+}
+
+.list-item:hover {
+    background-color: var(--gwhite);
+    background-image: radial-gradient(circle, transparent 1%, var(--gwhite) 1%);
+    background-position: center;
+    background-size: 15000%;
+}
+
+.list-item:active {
+    transition: background 0s;
+    background-color: #dededeff;
+    background-size: 100%;
+}
+
+#list-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #item-name {
     width: 50%;
-    margin-right: 20px;
-    margin: 10px 0 0 30px;
+    margin: 10px 0 0 15px;
+    font-size: 31px;
+    font-family: Bahnschrift;
+    font-weight: bold;
+    color: var(--dgray);
 }
 
-#item-count {
-    font-size: 10px;
-    color: var(--gray); 
-    margin: 0 0 0 30px;
+#item-counter {
+    margin: 0 0 0 15px;
+    font-size: 18px;
+    font-family: Bahnschrift;
+    color: var(--lgray); 
 }
 
 .checker {
@@ -149,5 +235,4 @@ body {
 
 .list-status {
     height: 20px;
-    width: 20px;
 }
