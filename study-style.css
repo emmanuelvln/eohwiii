@@ -114,6 +114,11 @@ body {
     left: 47px;
 }
 
+#back-button:hover {
+    cursor: pointer;
+    filter: brightness(0.9);
+}
+
 #list-prompt {
     display: flex;
     align-items: center;
