@@ -143,6 +143,11 @@ body {
     font-size: 25px;
 }
 
+#start-button:hover {
+    cursor: pointer;
+    filter: brightness(0.9);
+}
+
 #info-container {
     display: flex;
     align-items: center;
