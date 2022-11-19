@@ -136,6 +136,7 @@ body {
     background-color: white;
     width: 76%;
     height: 73px;
+    min-height: 73px;
     margin-top: 17px;
     border-radius: 15px;
     display: flex;
@@ -162,6 +163,7 @@ body {
 #input-container {
     width: 76%;
     height: 73px;
+    min-height: 73px;
     margin-top: 10px;
 }
 
@@ -183,6 +185,7 @@ body {
     color: white;
     width: 132px;
     height: 40px;
+    min-height: 40px;
     background: linear-gradient(to right, var(--blue), var(--pink));
     border-radius: 50px;
     display: flex;
