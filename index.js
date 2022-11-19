@@ -13,9 +13,16 @@
 			appendContent();
 
             if (!navigator.userAgent.match(/Android/i) && !navigator.userAgent.match(/iPhone/i)) {
-               document.getElementById("app").style.width = "500px";
+                document.getElementById("app").style.display = "none";
+                document.getElementById("disclaimer").style.display = "flex";
             }
 		});
+
+        function closeDisclaimer() {
+            document.getElementById("disclaimer").style.display = "none";
+            document.getElementById("app").style.display = "flex";
+            document.getElementById("app").style.width = "500px";
+        }
 
         var appendContent=function(){
             fetch('https://raw.githubusercontent.com/emmanuelvln/eohwiii/main/vocablist.json')
@@ -45,7 +52,7 @@
             s = 0;
             for (i = 0; i < selected.length; i++)
                 s += vocab[selected[i]].content.length;
-            document.getElementById('item-count').innerHTML = "<img src='list-icon-gray.png'><p>studying " + s + " items</p>";
+            document.getElementById('item-count').innerHTML = "<img src='item-icon.png'><p>studying " + s + " items</p>";
         }
 
         function addItem(n) {
@@ -62,7 +69,7 @@
             s = 0;
             for (i = 0; i < selected.length; i++)
                 s += vocab[selected[i]].content.length;
-            document.getElementById('item-count').innerHTML = "<img src='list-icon-gray.png'><p>studying " + s + " items</p>";
+            document.getElementById('item-count').innerHTML = "<img src='item-icon.png'><p>studying " + s + " items</p>";
         }
 
         function start() {

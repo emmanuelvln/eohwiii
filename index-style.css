@@ -56,7 +56,7 @@ body
 {
     -webkit-user-select: none;
     -moz-user-select:-moz-none;
-    -ms-user-select:none;
+    à-ms-user-select:none;
     user-select:none;
 }
 
@@ -66,6 +66,62 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#disclaimer {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--gwhite);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#disclaimer-popup {
+    background-color: white;
+    height: 60vh;
+    width: 25vw;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    font-family: Bahnschrift;
+}
+
+#disclaimer-popup p {
+    text-align: center;
+    font-size: 40px; 
+    margin: 0 10% 0 10%;
+}
+
+#disclaimer-wave {
+    aspect-ratio: 500/205;
+    width: 100%;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./top-wave.svg');
+}
+
+#disclaimer-title {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+#disclaimer-button {
+    font-size: 15px;
+    cursor: pointer;
+    color: var(--lgray); 
 }
 
 #app {
@@ -98,12 +154,12 @@ body {
     justify-content: start;
 }
 
-#title {
+.title {
     font-family: UbuntuBold;
     font-size: 45px;
 }
 
-#subtitle {
+.subtitle {
     font-family: UbuntuLight;
     font-size: 28px;
 }
