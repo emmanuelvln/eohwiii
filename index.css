@@ -56,7 +56,7 @@ body
 {
     -webkit-user-select: none;
     -moz-user-select:-moz-none;
-    à-ms-user-select:none;
+    -ms-user-select:none;
     user-select:none;
 }
 
@@ -80,7 +80,9 @@ body {
 #disclaimer-popup {
     background-color: white;
     height: 60vh;
+    min-height: 500px;
     width: 25vw;
+    min-width: 600px;
     border-radius: 30px;
     overflow: hidden;
     display: flex;
@@ -103,7 +105,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url('./top-wave.svg');
+    background-image: url('./imgs/top-wave.svg');
 }
 
 #disclaimer-title {
@@ -140,7 +142,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url('./top-wave.svg');
+    background-image: url('./imgs/top-wave.svg');
 }
 
 #title-container {

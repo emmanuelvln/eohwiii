@@ -85,7 +85,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url('./top-wave.svg');
+    background-image: url('./imgs/top-wave.svg');
 }
 
 #title-container {
@@ -266,7 +266,7 @@ body {
 }
 
 #popup-wave {
-    background-image: url('./wave-green.svg');
+    background-image: url('./imgs/wave-green.svg');
     text-align: center;
 }
 

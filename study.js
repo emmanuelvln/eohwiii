@@ -16,20 +16,20 @@
             if (selected == null || selected == [])
 			    location.href = 'index.html';
             if (!navigator.userAgent.match(/Android/i) && !navigator.userAgent.match(/iPhone/i)) {
-               document.getElementById("app").style.width = "500px"; 
-               document.getElementById("back-button").style.left = "calc(100vw / 2 - 250px + 47px)"; 
+               document.getElementById("app").style.width = "500px";
+               document.getElementById("back-button").style.left = "calc(100vw / 2 - 250px + 47px)";
             }
 			appendContent();
 
             input = document.querySelector("#input-field");
             input.addEventListener('keyup', (event) => {
                 if (event.key == 'Enter' && document.querySelector("#input-field").value != '')
-                   openPopUp(false); 
+                   openPopUp(false);
                 else
                     getInput();
             });
 		});
-        
+
         var appendContent=function(){
             fetch('https://raw.githubusercontent.com/emmanuelvln/eohwiii/main/vocablist.json')
                 .then(function (response) {
@@ -43,7 +43,7 @@
                     console.log('error: ' + err);
                 });
         };
-        
+
         function setupData() {
             studiedList = selected[getRandomInt(0,selected.length)];
             console.log(studiedList);
@@ -51,17 +51,17 @@
             translation = vocab[studiedList].content[i].translation
                         .split(';')[0].replace(/\(([^)]+)\)/, '');
             hangeul = vocab[studiedList].content[i].hangeul;
-            
+
             document.getElementById("list-prompt-text").innerHTML = vocab[studiedList].name;
-    
+
             if (getRandomInt(0, 2) == 0) {
                 element = hangeul;
-                answer = translation;    
+                answer = translation;
                 goal = "meaning";
             }
             else {
                 element = translation;
-                answer = hangeul;    
+                answer = hangeul;
                 goal = "translation";
             }
             console.log(answer);
@@ -74,7 +74,7 @@
 
             document.querySelector("#input-field").value = "";
         }
-       
+
         function getInput() {
             resp = document.querySelector("#input-field").value;
             if (resp != "" && resp != " " && isCorrectWord(resp)) {
@@ -95,7 +95,7 @@
                             .style.background
                             = "linear-gradient(to right, #510a32ff, #ee4540ff)";
                 document.getElementById("popup-wave")
-                            .style.backgroundImage = "url('./wave-red.svg')";
+                            .style.backgroundImage = "url('./imgs/wave-red.svg')";
                 document.getElementById("wave-state").innerHTML = "Incorrect";
             }
             else {
@@ -103,7 +103,7 @@
                             .style.background
                             = "linear-gradient(to right, #049b5bff, #32fca7ff)";
                 document.getElementById("popup-wave")
-                            .style.backgroundImage = "url('./wave-green.svg')";
+                            .style.backgroundImage = "url('./imgs/wave-green.svg')";
                 document.getElementById("wave-state").innerHTML = "Correct";
             }
             document.getElementById("popup-container").style.display = "block";
