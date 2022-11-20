@@ -23,6 +23,7 @@ Once you are on Eohwiii's website<sup>[?](https://emmanuelvln.github.io/eohwiii/
 
 The next page you are sent to is the one where you will spend most of your time. A word from the previously selected collections appears and you have to translate it.
 > Either it will appear in korean and you must give the english translation, either it will appear in english and you must give the korean translation.
+
 If you know the answer, it will instantly be validated. If not, you can press the **Skip** button to reveal the answer and go to the next word.
 
 ## Special thanks
