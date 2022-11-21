@@ -157,6 +157,12 @@ body {
     font-size: 24px;
 }
 
+#listen {
+    margin-top: 5px;
+    font-family: Bahnschrift; 
+    color: var(--lgray);
+}
+
 #indicator {
     margin-top: 20px;
     display: block;

@@ -1,10 +1,11 @@
-        vocab = null;
-        answer = "";
-        hangeul = "";
-        translation = "";
-        studiedList = 0;
-        selected = [];
-        isMobile = true;
+vocab = null;
+answer = "";
+isKorean = false;
+hangeul = "";
+translation = "";
+studiedList = 0;
+selected = [];
+isMobile = true;
 
         function getRandomInt(min, max) {
             min = Math.ceil(min);
@@ -60,6 +61,7 @@
                 element = hangeul;
                 answer = translation;
                 goal = "meaning";
+                isKorean = true;
             }
             else {
                 element = translation;
@@ -124,3 +126,16 @@
 			location.href = 'index.html';
         }
 
+function playSound() {
+    if (!isKorean) {
+        lang = 'en-UK';
+        word = translation;
+    }
+    else {
+        lang = 'ko';
+        word = hangeul;
+    }
+    const url= `https://translate.google.com/translate_tts?ie=UTF-8&tl=${lang}&client=tw-ob&q=${word}`;
+    audio = new Audio(url);
+    audio.play();
+}
