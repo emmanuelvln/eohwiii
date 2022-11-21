@@ -4,6 +4,7 @@
         translation = "";
         studiedList = 0;
         selected = [];
+        isMobile = true;
 
         function getRandomInt(min, max) {
             min = Math.ceil(min);
@@ -16,8 +17,9 @@
             if (selected == null || selected == [])
 			    location.href = 'index.html';
             if (!navigator.userAgent.match(/Android/i) && !navigator.userAgent.match(/iPhone/i)) {
-               document.getElementById("app").style.width = "500px";
-               document.getElementById("back-button").style.left = "calc(100vw / 2 - 250px + 47px)";
+                document.getElementById("app").style.width = "500px";
+                document.getElementById("back-button").style.left = "calc(100vw / 2 - 250px + 47px)";
+                isMobile = false;
             }
 			appendContent();
 
@@ -54,7 +56,7 @@
 
             document.getElementById("list-prompt-text").innerHTML = vocab[studiedList].name;
 
-            if (getRandomInt(0, 2) == 0) {
+            if (!isMobile || getRandomInt(0, 2) == 0) {
                 element = hangeul;
                 answer = translation;
                 goal = "meaning";
