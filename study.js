@@ -135,7 +135,5 @@ function playSound() {
         lang = 'ko';
         word = hangeul;
     }
-    const url= `https://translate.google.com/translate_tts?ie=UTF-8&tl=${lang}&client=tw-ob&q=${word}`;
-    audio = new Audio(url);
-    audio.play();
+    window.open(`https://translate.google.com/translate_tts?ie=UTF-8&tl=${lang}&client=tw-ob&q=${word}`);
 }
