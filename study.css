@@ -163,6 +163,10 @@ body {
     color: var(--lgray);
 }
 
+#listen:hover {
+    cursor: pointer;
+}
+
 #indicator {
     margin-top: 20px;
     display: block;
