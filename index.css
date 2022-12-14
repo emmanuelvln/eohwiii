@@ -217,7 +217,7 @@ body {
 #item-name {
     width: 50%;
     margin: 10px 0 0 15px;
-    font-size: 31px;
+    font-size: 25px;
     font-family: Bahnschrift;
     font-weight: bold;
     color: var(--dgray);
