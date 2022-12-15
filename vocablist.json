@@ -1,6 +1,6 @@
 [
 	{
-		"name": "Korean starter pack",
+		"name": "Korean starter pack 01",
 		"content":
 			[
 				{
@@ -82,7 +82,13 @@
 				{
 					"hangeul": "잠시만요",
 					"translation": "excuse me (as in a crowd)"
-				},
+				}
+			]
+	},
+	{
+		"name": "Korean starter pack 02",
+		"content":
+			[
 				{
 					"hangeul": "가다",
 					"translation": "to go"
@@ -162,7 +168,13 @@
 				{
 					"hangeul": "저",
 					"translation": "that over there"
-				},
+				}
+			]
+	},
+	{
+		"name": "Korean starter pack 03",
+		"content":
+			[
 				{
 					"hangeul": "케이크",
 					"translation": "cake"
@@ -242,7 +254,13 @@
 				{
 					"hangeul": "있다",
 					"translation": "to exist (as in something is)"
-				},
+				}
+			]
+	},
+	{
+		"name": "Korean starter pack 04",
+		"content":
+			[
 				{
 					"hangeul": "없다",
 					"translation": "to not exist (as in something isn't)"
@@ -322,7 +340,13 @@
 				{
 					"hangeul": "조금",
 					"translation": "a little or kind of"
-				},
+				}
+			]
+	},
+	{
+		"name": "Korean starter pack 05",
+		"content":
+			[
 				{
 					"hangeul": "더",
 					"translation": "more"
