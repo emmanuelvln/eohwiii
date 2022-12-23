@@ -27,18 +27,12 @@ $(document).ready(function(){
 
     input = document.querySelector("#input-field");
     input.addEventListener('keyup', (event) => {
-        if (event.key == 'Enter') {
-            console.log(isPopUp);
-            if (!isPopUp) {
-                console.log(document.querySelector('#input-field').value);
-                if (document.querySelector("#input-field").value != '')
-                    openPopUp(false);
-                else
-                    getInput();
-            }
-            else
-                clearPopUp();
-        }
+        if (isPopUp && event.key == 'Enter')
+            clearPopUp();
+        else if (!isPopUp && event.key == 'Enter')
+            openPopUp(false);
+        else
+            getInput();
     });
 });
 
