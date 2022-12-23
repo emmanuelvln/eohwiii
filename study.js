@@ -6,6 +6,7 @@ translation = "";
 studiedList = 0;
 selected = [];
 isMobile = true;
+isPopUp = false;
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -26,10 +27,18 @@ $(document).ready(function(){
 
     input = document.querySelector("#input-field");
     input.addEventListener('keyup', (event) => {
-        if (event.key == 'Enter' && document.querySelector("#input-field").value != '')
-            openPopUp(false);
-        else
-            getInput();
+        if (event.key == 'Enter') {
+            console.log(isPopUp);
+            if (!isPopUp) {
+                console.log(document.querySelector('#input-field').value);
+                if (document.querySelector("#input-field").value != '')
+                    openPopUp(false);
+                else
+                    getInput();
+            }
+            else
+                clearPopUp();
+        }
     });
 });
 
@@ -93,6 +102,7 @@ return false;
 }
 
 function openPopUp(correct) {
+    isPopUp = true;
     if (!correct) {
         document.getElementById("popup-button")
             .style.background
@@ -116,6 +126,7 @@ function openPopUp(correct) {
 }
 
 function clearPopUp() {
+    isPopUp = false;
     document.getElementById("popup-container").style.display = "none";
     document.getElementById("filter").style.display = "none";
     setupData();
