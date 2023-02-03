@@ -130,7 +130,7 @@
 					"translation": "to go out(side)"
 				},
 				{
-					"hangeul": "-고 싶다",
+					"hangeul": "고 싶다",
 					"translation": "to want to do something"
 				},
 				{
@@ -266,23 +266,23 @@
 					"translation": "to not exist (as in something isn't)"
 				},
 				{
-					"hangeul": "-도",
+					"hangeul": "도",
 					"translation": "also or too"
 				},
 				{
-					"hangeul": "-에",
+					"hangeul": "에",
 					"translation": "location particle"
 				},
 				{
-					"hangeul": "-를 or -을",
+					"hangeul": "를 or 을",
 					"translation": "object marker"
 				},
 				{
-					"hangeul": "-는 or -은",
+					"hangeul": "는 or 은",
 					"translation": "topic marker"
 				},
 				{
-					"hangeul": "-가 or -이",
+					"hangeul": "가 or 이",
 					"translation": "subject marker"
 				},
 				{
@@ -361,11 +361,11 @@
 				},
 				{
 					"hangeul": "맛있다",
-					"translation": "to be delicious or taste good"
+					"translation": "to taste good"
 				},
 				{
 					"hangeul": "재미있다",
-					"translation": "to be fun or entertaining"
+					"translation": "to be fun"
 				},
 				{
 					"hangeul": "쉽다",
@@ -398,6 +398,166 @@
 				{
 					"hangeul": "덥다",
 					"translation": "to be hot or warm"
+				},
+				{
+					"hangeul": "스포츠",
+					"translation": "sports"
+				},
+				{
+					"hangeul": "댄스",
+					"translation": "dance"
+				},
+				{
+					"hangeul": "역사",
+					"translation": "history"
+				},
+				{
+					"hangeul": "음식",
+					"translation": "food"
+				},
+				{
+					"hangeul": "축구",
+					"translation": "football"
+				},
+				{
+					"hangeul": "농구",
+					"translation": "basketball"
+				},
+				{
+					"hangeul": "등산",
+					"translation": "hiking"
+				}
+			]
+	},
+	{
+		"name": "Korean starter pack 06",
+		"content":
+			[
+				{
+					"hangeul": "개",
+					"translation": "dog"
+				},
+				{
+					"hangeul": "책",
+					"translation": "book"
+				},
+				{
+					"hangeul": "영화",
+					"translation": "movie"
+				},
+				{
+					"hangeul": "죽다",
+					"translation": "to die"
+				},
+				{
+					"hangeul": "웃다",
+					"translation": "to smile"
+				},
+				{
+					"hangeul": "게임",
+					"translation": "game"
+				},
+				{
+					"hangeul": "돈",
+					"translation": "money"
+				},
+				{
+					"hangeul": "연필",
+					"translation": "pencil"
+				},
+				{
+					"hangeul": "배",
+					"translation": "ship"
+				},
+				{
+					"hangeul": "보트",
+					"translation": "boat"
+				},
+				{
+					"hangeul": "휴대폰",
+					"translation": "cell phone"
+				},
+				{
+					"hangeul": "야채",
+					"translation": "vegetable"
+				},
+				{
+					"hangeul": "과일",
+					"translation": "fruit"
+				},
+				{
+					"hangeul": "바나나",
+					"translation": "banana"
+				},
+				{
+					"hangeul": "토마토",
+					"translation": "tomato"
+				},
+				{
+					"hangeul": "레몬",
+					"translation": "lemon"
+				},
+				{
+					"hangeul": "오렌지",
+					"translation": "orange"
+				},
+				{
+					"hangeul": "아이스크림",
+					"translation": "ice cream"
+				},
+				{
+					"hangeul": "만",
+					"translation": "only"
+				},
+				{
+					"hangeul": "오다",
+					"translation": "to come"
+				},
+				{
+					"hangeul": "집",
+					"translation": "home"
+				}
+			]
+	},
+	{
+		"name": "Korean starter pack 07",
+		"content":
+			[
+				{
+					"hangeul": "수영장",
+					"translation": "swimming pool"
+				},
+				{
+					"hangeul": "사무실",
+					"translation": "office"
+				},
+				{
+					"hangeul": "슈퍼마켓",
+					"translation": "supermarket"
+				},
+				{
+					"hangeul": "박물관",
+					"translation": "museum"
+				},
+				{
+					"hangeul": "바닷가",
+					"translation": "beach"
+				},
+				{
+					"hangeul": "주소",
+					"translation": "address"
+				},
+				{
+					"hangeul": "도시",
+					"translation": "city"
+				},
+				{
+					"hangeul": "길",
+					"translation": "street"
+				},
+				{
+					"hangeul": "치즈",
+					"translation": "cheese"
 				}
 			]
 	}
