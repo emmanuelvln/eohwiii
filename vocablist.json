@@ -267,7 +267,7 @@
 				},
 				{
 					"hangeul": "도",
-					"translation": "also or too"
+					"translation": "also, too"
 				},
 				{
 					"hangeul": "에",
@@ -339,7 +339,7 @@
 				},
 				{
 					"hangeul": "조금",
-					"translation": "a little or kind of"
+					"translation": "a little, kind of"
 				}
 			]
 	},
@@ -397,7 +397,7 @@
 				},
 				{
 					"hangeul": "덥다",
-					"translation": "to be hot or warm"
+					"translation": "to be hot, to be warm"
 				},
 				{
 					"hangeul": "스포츠",
@@ -552,12 +552,98 @@
 					"translation": "city"
 				},
 				{
-					"hangeul": "길거리",
+					"hangeul": "길",
 					"translation": "street"
 				},
 				{
 					"hangeul": "치즈",
 					"translation": "cheese"
+				}
+			]
+	},
+	{
+		"name": "Counting",
+		"content":
+			[
+				{
+					"hangeul": "하나",
+					"translation": "one (kr)"
+				},
+				{
+					"hangeul": "둘",
+					"translation": "two (kr)"
+				},
+				{
+					"hangeul": "셋",
+					"translation": "three (kr)"
+				},
+				{
+					"hangeul": "넷",
+					"translation": "four (kr)"
+				},
+				{
+					"hangeul": "다섯",
+					"translation": "five (kr)"
+				},
+				{
+					"hangeul": "여섯",
+					"translation": "six (kr)"
+				},
+				{
+					"hangeul": "일곱",
+					"translation": "seven (kr)"
+				},
+				{
+					"hangeul": "여덟",
+					"translation": "eight (kr)"
+				},
+				{
+					"hangeul": "아홉",
+					"translation": "nine (kr)"
+				},
+				{
+					"hangeul": "열",
+					"translation": "ten (kr)"
+				},
+				{
+					"hangeul": "일",
+					"translation": "one (sino)"
+				},
+				{
+					"hangeul": "이",
+					"translation": "two (sino)"
+				},
+				{
+					"hangeul": "삼",
+					"translation": "three (sino)"
+				},
+				{
+					"hangeul": "사",
+					"translation": "four (sino)"
+				},
+				{
+					"hangeul": "오",
+					"translation": "five (sino)"
+				},
+				{
+					"hangeul": "육",
+					"translation": "six (sino)"
+				},
+				{
+					"hangeul": "칠",
+					"translation": "seven (sino)"
+				},
+				{
+					"hangeul": "팔",
+					"translation": "eight (sino)"
+				},
+				{
+					"hangeul": "구",
+					"translation": "nine (sino)"
+				},
+				{
+					"hangeul": "십",
+					"translation": "ten (sino)"
 				}
 			]
 	}
