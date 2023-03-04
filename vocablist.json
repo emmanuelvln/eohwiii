@@ -167,7 +167,7 @@
 				},
 				{
 					"hangeul": "저",
-					"translation": "that over there"
+					"translation": "I, that over there"
 				}
 			]
 	},
@@ -558,6 +558,210 @@
 				{
 					"hangeul": "치즈",
 					"translation": "cheese"
+				},
+				{
+					"hangeul": "화장실",
+					"translation": "wc"
+				},
+				{
+					"hangeul": "이름",
+					"translation": "first name"
+				},
+				{
+					"hangeul": "성",
+					"translation": "last name"
+				},
+				{
+					"hangeul": "나이",
+					"translation": "age"
+				},
+				{
+					"hangeul": "성별",
+					"translation": "gender"
+				},
+				{
+					"hangeul": "남자",
+					"translation": "man"
+				},
+				{
+					"hangeul": "여자",
+					"translation": "woman"
+				},
+				{
+					"hangeul": "젓가락",
+					"translation": "chopsticks"
+				},
+				{
+					"hangeul": "숟가락",
+					"translation": "spoon"
+				},
+				{
+					"hangeul": "가게",
+					"translation": "shop"
+				},
+				{
+					"hangeul": "선생님",
+					"translation": "teacher"
+				}
+			]
+	},
+	{
+		"name": "Korean starter pack 08",
+		"content":
+			[
+				{
+					"hangeul": "친구",
+					"translation": "friend"
+				},
+				{
+					"hangeul": "한국",
+					"translation": "Korea"
+				},
+				{
+					"hangeul": "프랑스",
+					"translation": "France"
+				},
+				{
+					"hangeul": "미국",
+					"translation": "USA"
+				},
+				{
+					"hangeul": "학생",
+					"translation": "student"
+				},
+				{
+					"hangeul": "밥",
+					"translation": "rice"
+				},
+				{
+					"hangeul": "물",
+					"translation": "water"
+				},
+				{
+					"hangeul": "사람",
+					"translation": "person, people"
+				},
+				{
+					"hangeul": "아버지",
+					"translation": "father"
+				},
+				{
+					"hangeul": "어머니",
+					"translation": "mother"
+				},
+				{
+					"hangeul": "시간",
+					"translation": "time, hours"
+				},
+				{
+					"hangeul": "뭐",
+					"translation": "what"
+				},
+				{
+					"hangeul": "오늘",
+					"translation": "today"
+				},
+				{
+					"hangeul": "최근",
+					"translation": "lately"
+				},
+				{
+					"hangeul": "내일",
+					"translation": "tomorrow"
+				},
+				{
+					"hangeul": "머리",
+					"translation": "head, hair"
+				},
+				{
+					"hangeul": "주다",
+					"translation": "to give"
+				},
+				{
+					"hangeul": "예쁘다",
+					"translation": "to be pretty, to be charming"
+				},
+				{
+					"hangeul": "주스",
+					"translation": "juice"
+				},
+				{
+					"hangeul": "읽다",
+					"translation": "to read"
+				}
+			]
+	},
+	{
+		"name": "Korean starter pack 09",
+		"content":
+			[
+				{
+					"hangeul": "사다",
+					"translation": "to buy"
+				},
+				{
+					"hangeul": "노래",
+					"translation": "song"
+				},
+				{
+					"hangeul": "감사하다",
+					"translation": "to be thankful"
+				},
+				{
+					"hangeul": "같이",
+					"translation": "together"
+				},
+				{
+					"hangeul": "제",
+					"translation": "my"
+				},
+				{
+					"hangeul": "알다",
+					"translation": "to know, to understand"
+				},
+				{
+					"hangeul": "우유",
+					"translation": "milk"
+				},
+				{
+					"hangeul": "알",
+					"translation": "egg"
+				},
+				{
+					"hangeul": "물고기",
+					"translation": "fish"
+				},
+				{
+					"hangeul": "고기",
+					"translation": "meat"
+				},
+				{
+					"hangeul": "일요일",
+					"translation": "Monday"
+				},
+				{
+					"hangeul": "월요일",
+					"translation": "Tuesday"
+				},
+				{
+					"hangeul": "화요일",
+					"translation": "Wednesday"
+				},
+				{
+					"hangeul": "수요일",
+					"translation": "Thursday"
+				},
+				{
+					"hangeul": "목요일",
+					"translation": "Friday"
+				},
+				{
+					"hangeul": "금요일",
+					"translation": "Saturday"
+				},
+				{
+					"hangeul": "토요일",
+					"translation": "Sunday"
 				}
 			]
 	},
