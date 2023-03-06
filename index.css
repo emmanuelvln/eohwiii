@@ -184,15 +184,18 @@ body {
     overflow: scroll;
 }
 
-.list-item {
+.list-item-container {
     width: 90%;
-    min-height: 70px;
+    height: 100%;
+    padding: 15px 15px 15px 15px;
+}
+
+.list-item {
     display: grid;
     grid-template-columns: 10% 50px 70% 10%;
     background-color: var(--gwhite);
     background-position: center;
     transition: background 1s;
-    padding: 15px 15px 15px 15px;
 }
 
 .list-item:hover {
@@ -208,13 +211,18 @@ body {
     background-size: 100%;
 }
 
-#chevron {
+.hidden-list-item {
+    display: none;
+    height: 300px;
+}
+
+.chevron {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#chevron-icon {
+.chevron-icon {
     padding: 10px;
 }
 
