@@ -185,10 +185,10 @@ body {
 }
 
 .list-item {
-    width: 80%;
+    width: 90%;
     min-height: 70px;
     display: grid;
-    grid-template-columns: 15% 75% 10%;
+    grid-template-columns: 10% 50px 70% 10%;
     background-color: var(--gwhite);
     background-position: center;
     transition: background 1s;
@@ -208,6 +208,16 @@ body {
     background-size: 100%;
 }
 
+#chevron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#chevron-icon {
+    padding: 10px;
+}
+
 #list-icon {
     display: flex;
     flex-direction: column;
@@ -215,9 +225,9 @@ body {
 }
 
 #item-name {
-    width: 50%;
+    width: 80%;
     margin: 10px 0 0 15px;
-    font-size: 25px;
+    font-size: 23px;
     font-family: Bahnschrift;
     font-weight: bold;
     color: var(--dgray);
@@ -225,7 +235,7 @@ body {
 
 #item-counter {
     margin: 0 0 0 15px;
-    font-size: 18px;
+    font-size: 15px;
     font-family: Bahnschrift;
     color: var(--lgray); 
 }

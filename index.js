@@ -31,9 +31,9 @@ function setupData() {
         if (selected == null)
             selected = [];
         if (selected != [] && selected.includes(i))
-            $('#list-container').append("<div class='list-item' onclick='addItem(" + i + ")'><div id='list-icon'><img src='imgs/list-icon.png' height='44px'></div><div><p id='item-name'>" + vocab[i].name + "</p><p id='item-counter'>" + vocab[i].content.length + " items</p></div><div class='checker'><img id='status-image" + i + "' class='list-status' src='imgs/check-icon.png'></div>");
+            $('#list-container').append("<div class='list-item'><div id='chevron'><img id='chevron-icon' src='imgs/chevron.webp' height='20px' weight='20xp'></div><div id='list-icon' onclick='addItem(" + i + ")'><img src='imgs/list-icon.png' height='40px'></div><div onclick='addItem(" + i + ")'><p id='item-name'>" + vocab[i].name + "</p><p id='item-counter'>" + vocab[i].content.length + " items</p></div><div class='checker' onclick='addItem(" + i + ")'><img id='status-image" + i + "' class='list-status' src='imgs/check-icon.png'></div>");
         else
-            $('#list-container').append("<div class='list-item' onclick='addItem(" + i + ")'><div id='list-icon'><img src='imgs/list-icon.png' height='44px'></div><div><p id='item-name'>" + vocab[i].name + "</p><p id='item-counter'>" + vocab[i].content.length + " items</p></div><div class='checker'><img id='status-image" + i + "' class='list-status' src=''></div>");
+            $('#list-container').append("<div class='list-item'><div id='chevron'><img id='chevron-icon' src='imgs/chevron.webp' height='20px' weight='20px'></div><div id='list-icon' onclick='addItem(" + i + ")'><img src='imgs/list-icon.png' height='40px'></div><div onclick='addItem(" + i + ")'><p id='item-name'>" + vocab[i].name + "</p><p id='item-counter'>" + vocab[i].content.length + " items</p></div><div class='checker' onclick='addItem(" + i + ")'><img id='status-image" + i + "' class='list-status' src=''></div>");
     }
     document.getElementById('list-count').innerHTML = "<img src='imgs/list-icon-gray.png'><p>studying " + selected.length + " lists</p>";
     s = 0;
