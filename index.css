@@ -214,6 +214,36 @@ body {
 .hidden-list-item {
     display: none;
     height: 300px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden-items {
+    width: 70%;
+    display: flex;
+
+}
+
+.hidden-bubbles {
+    width: 50%;
+    text-align: center;
+    font-family: LotteMartBold; 
+    padding: 10px 0 10px 0;
+    margin: 5px 0 5px 0;
+}
+
+#hidden-bubble-left {
+    background-image: url('./imgs/item-bubble-left.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#hidden-bubble-right {
+    background-image: url('./imgs/item-bubble-right.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .chevron {
