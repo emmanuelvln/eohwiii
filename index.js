@@ -57,13 +57,13 @@ function openItem(n) {
     else if (opened != null)
     {
         document.getElementById("hidden-list-item" + opened).style.display = "none";
-        document.getElementById("hidden-list-item" + n).style.display = "block";
+        document.getElementById("hidden-list-item" + n).style.display = "flex";
         document.getElementById("chevron" + n).src = "imgs/chevron-down.png";
         opened = n;
     }
     else
     {
-        document.getElementById("hidden-list-item" + n).style.display = "block";
+        document.getElementById("hidden-list-item" + n).style.display = "flex";
         document.getElementById("chevron" + n).src = "imgs/chevron-down.png";
         opened = n;
     }
