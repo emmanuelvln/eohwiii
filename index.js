@@ -35,6 +35,10 @@ function setupData() {
             $('#list-container').append("<div class='list-item-container'><div id='list-item" + i + "' class='list-item'><div class='chevron' onclick='openItem(" + i + ")'><img id='chevron" + i + "' class='chevron-icon' src='imgs/chevron-right.png' height='20px' weight='20xp'></div><div id='list-icon' onclick='addItem(" + i + ")'><img src='imgs/list-icon.png' height='40px'></div><div onclick='addItem(" + i + ")'><p id='item-name'>" + vocab[i].name + "</p><p id='item-counter'>" + vocab[i].content.length + " items</p></div><div class='checker' onclick='addItem(" + i + ")'><img id='status-image" + i + "' class='list-status' src='imgs/check-icon.png'></div></div><div id='hidden-list-item" + i + "' class='hidden-list-item'></div></div>");
         else
             $('#list-container').append("<div class='list-item-container'><div id='list_item" + i  + "' class='list-item'><div class='chevron' onclick='openItem(" + i + ")'><img id='chevron" + i + "' class='chevron-icon' src='imgs/chevron-right.png' height='20px' weight='20px'></div><div id='list-icon' onclick='addItem(" + i + ")'><img src='imgs/list-icon.png' height='40px'></div><div onclick='addItem(" + i + ")'><p id='item-name'>" + vocab[i].name + "</p><p id='item-counter'>" + vocab[i].content.length + " items</p></div><div class='checker' onclick='addItem(" + i + ")'><img id='status-image" + i + "' class='list-status' src=''></div><div id='hidden-list-item" + i + "' class='hidden-list-item'></div></div>");
+        for (j = 0; j < vocab[i].content.length; j++)
+        {
+            document.getElementById('hidden-list-item' + i).innerHTML += "<div>" + vocab[i].content[j].translation+ "</div>";
+        }
     }
     document.getElementById('list-count').innerHTML = "<img src='imgs/list-icon-gray.png'><p>studying " + selected.length + " lists</p>";
     s = 0;
