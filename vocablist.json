@@ -5,7 +5,7 @@
 			[
 				{
 					"hangeul": "안녕",
-					"translation": "hi or bye"
+					"translation": "hi, bye"
 				},
 				{
 					"hangeul": "안녕하세요",
@@ -13,11 +13,11 @@
 				},
 				{
 					"hangeul": "안녕히 가세요",
-					"translation": "goodbye to someone leaving"
+					"translation": "goodbye (to someone leaving)"
 				},
 				{
 					"hangeul": "안녕히 계세요",
-					"translation": "goodbye when you are leaving"
+					"translation": "goodbye (when you are leaving)"
 				},
 				{
 					"hangeul": "저는 임마누엘 이에요",
@@ -540,7 +540,7 @@
 					"translation": "museum"
 				},
 				{
-					"hangeul": "바닷가",
+					"hangeul": "해수욕장",
 					"translation": "beach"
 				},
 				{
